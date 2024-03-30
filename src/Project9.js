@@ -7,7 +7,7 @@ import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 
 
-const Project6 = () => {
+const Project9 = () => {
     return (
 
 <main id="page-content" className="">
@@ -26,13 +26,13 @@ const Project6 = () => {
                     <i></i>
                     <span>Back</span>
                 </a>
-                <a href="/project7" className="next">
-                    <span>Minesweeper</span>
+                <a href="/project10" className="next">
+                    <span>Wack-A-Mole</span>
                     <em></em>
                 </a>
                 
-                <a href="/project5" className="prev">
-                    <span>Maze Solver</span>
+                <a href="/project8" className="prev">
+                    <span>Warren Blog</span>
                     <em></em>
                 </a>
                 <div className="ribbon">
@@ -43,10 +43,10 @@ const Project6 = () => {
                 <article itemScope="" itemType="https://schema.org/WebSite" className="centered">
                     <div className="wrapper">
                         <header>
-                            <h1 itemProp="name">Tasty Bites</h1>
-                            <h2 itemProp="description">Built using react.js with custom Web Components, Javascript, and SQL. Full-Stack Retaurant Web Application. </h2>
-                            <link itemProp="image" href="https://i.imgur.com/2SYp49O.png"/>
-                            <meta itemProp="url" content="https://tasty-bites.herokuapp.com/"/>
+                            <h1 itemProp="name">UNO Game</h1>
+                            <h2 itemProp="description">Built as a Java Apache NetBeans JFrame Application </h2>
+                            <link itemProp="image" href="https://i.imgur.com/JZbouM8.png"/>
+                            <meta itemProp="url" content="https://www.loom.com/share/878cb1bbaa254b479c2ed061579942b4"/>
                             <span itemProp="author" itemScope="" itemType="http://schema.org/Person">
                                 <meta itemProp="name" content="Warren Peterson"/>
                                 <meta itemProp="address" content="USA"/>
@@ -54,8 +54,8 @@ const Project6 = () => {
                                 <meta itemProp="jobTitle" content="Full-Stack Web Developer, UI/UX Javascript"/>
                             </span>
                             <div className="share">
-                                <awesome-button  type="external" target="_blank" href="https://tasty-bites.herokuapp.com/" title="Visit the website">
-                                    <a href="https://tasty-bites.herokuapp.com/" className="aws-btn aws-btn--external aws-btn--orange aws-btn--visible">
+                                <awesome-button  type="external" target="_blank" href="https://www.loom.com/share/878cb1bbaa254b479c2ed061579942b4" title="Watch video">
+                                    <a href="https://www.loom.com/share/878cb1bbaa254b479c2ed061579942b4" className="aws-btn aws-btn--external aws-btn--orange aws-btn--visible">
                                         <span className="aws-btn__container">
                                             <span className="aws-btn__wrapper">
                                                 <span className="aws-btn__content" dataStatus="Success!" dataLoading="Wait for it ..">
@@ -64,14 +64,14 @@ const Project6 = () => {
                                                             <path d="M36.999,36.998H13V13.089L19,13V7h-12v35.998h35.998V27.999h-6V36.998z M25,7l6,6l-9,9l6,6l8.999-9l6,6V7H25z" fill="#ffffff">
                                                             </path>
                                                         </svg> 
-                                                        <span>Visit the website</span>
+                                                        <span>Watch Video</span>
                                                     </span>
                                                 </span>
                                             </span>
                                         </span>
                                     </a>
                                 </awesome-button>
-                                <awesome-button className="s_" title="Share it on Twitter" type="twitter" size="icon" via="warrengfoofight" text="Tasty Bites | UI/UX Javascript Specialist | Warren Peterson" sharer="">
+                                <awesome-button className="s_" title="Share it on Twitter" type="twitter" size="icon" via="warrengfoofight" text="Uno Game | Software Developer | Warren Peterson" sharer="">
                                     <a href="/elements/" className="aws-btn aws-btn--twitter aws-btn--visible">
                                         <span className="aws-btn__container">
                                             <span className="aws-btn__wrapper">
@@ -110,44 +110,33 @@ const Project6 = () => {
                                 <i></i>
                             </div>
                             <small>
-                                <a target="_blank" className="hidden" href="https://github.com/WarrenGSlice/CST-326">Source Code</a>.
+                                <a target="_blank" className="hidden" href="https://github.com/WarrenGSlice/Uno-Game?tab=readme-ov-file">Source Code</a>.
                             </small>
                             <AwesomeSlider  height="x58%" bullets="true" animation="cubeAnimation">
-                                <item source="https://i.imgur.com/2SYp49O.png" style={{height:"100%", marginTop:"0.0%" }}></item>
-                                <item source="https://i.imgur.com/QzCgHzM.png" style={{height:"100%", marginTop:"0%" }}></item>
-                                <item source="https://i.imgur.com/WMtJjqs.png" style={{height:"81%", marginTop:"5%" }}></item>
-                                <item source="https://i.imgur.com/SHzYDuh.png" style={{height:"78%", marginTop:"6%" }}></item>
-                                
-                                <item source="https://imgur.com/SxrsKAo.png" style={{height:"80%", marginTop:"5.5%" }}></item>
+                                <item source="https://i.imgur.com/zKME0SP.png" style={{height:"90%", marginTop:"2.5%" }}></item>
+                                <item source="https://i.imgur.com/WTcA1pZ.png" style={{height:"100%", marginTop:"0%" }}></item>
+                                <item source="https://i.imgur.com/qxWIlx2.png" style={{height:"100%", marginTop:"0%" }}></item>
+                                <item source="https://i.imgur.com/zKME0SP.png" style={{height:"90%", marginTop:"2.5%" }}></item>
+                                <item source="https://i.imgur.com/sWFjqBF.png" style={{height:"90%", marginTop:"2.5%" }}></item>
+                                <item source="https://i.imgur.com/SEplrJH.png" style={{height:"90%", marginTop:"2.5%" }}></item>
+                                <item source="https://i.imgur.com/YPWl151.png" style={{height:"90%", marginTop:"2.5%" }}></item>
+                                <item source="https://i.imgur.com/JZbouM8.png" style={{height:"100%", marginTop:"0.0%" }}></item>
                             </AwesomeSlider>
                         </div>
                         <div className="text">
                         <div className="section">
                                 <h2>About this project</h2>
                                 <hr/>
-                                <p>The Tasty Bites Web Application was built using <strong>react.js</strong> with <strong>express.js</strong>, <strong>node.js </strong>and is a Full-Stack Application.
+                                <p>The <strong>Java </strong>Uno Game was made using <strong>Apache Netbeans JFrames</strong>.
                                 </p>
-                                <p>At this project I was the lead team member in an Agile Team and also the Lead UI/UX Design and Development of the application. The main challenge was to create a good looking Restaurant Front and 
-                                    a fully functioning back-end that could allow employees to change items and prices in the menu. The Back-End uses <strong>PostgreSQL </strong> with <strong>axios </strong> 
-                                    to handle the <strong>REST APIs</strong> used for menu adjustment. The Back-End Database also can allow the user to change users and their roles. Only admins have access to the 
-                                    menu adjustment dashboard. This is kept secure using <strong>BCrypt.js</strong> and <strong>jsonwebtoken</strong>.
+                                <p>This was my very first application and really gave me a sense of enjoyment for programming. I remember thinking that I could never figure out how to make
+                                     a functional Uno Game. I was able to succeed and it gave me the confidence and persistence I use today whenever I run into new problems.
+                                      The Game was developed from a flowchart showing the refined game flow logic. I also used UML diagrams and storyboards. This was my first foray into OOP.
                                 </p>
-                                <p>This Web Application also uses <strong>email.js</strong> for sending messages. The passwords are salted in the database with BCrypt.
-                                </p>
-                                <p>To log into the system and check it out, you can use 
+                                <p>This application was never deployed, but can be viewed at:  
                                     <span className="fancy">
-                                        <a href="https://tasty-bites.herokuapp.com/Login">lowercase john john</a>
+                                        <a href="https://www.loom.com/share/878cb1bbaa254b479c2ed061579942b4">_Video Link</a>
                                     </span>
-                                </p>
-                                <p>
-                                    Building this application required daily meetings, task assignment, delegation, debugging and unit testing. 
-                                    Each meber of the team had different tasks and specialities. The Login System and Menu Management System uses
-                                     CRUD Operations.
-                                </p>
-                                <h3>Conclusion</h3>
-                                <p>I Designed the overall website concept / UI DESIGN, implemented responsive home & menu pages. Deployed on Heroku. Created custom Logo's and Graphics.
-                                </p>
-                                <p> The purpose of this web application was create a restaurant home page that any restaurant would be happy to use.
                                 </p>
                             </div>
                             <div className="section">
@@ -156,29 +145,12 @@ const Project6 = () => {
                                 <ul itemProp="keywords">
                                     <li>UI/UX Architecture</li>
                                     <li>UI/UX Design</li>
-                                    <li>UI/UX Animations</li>
-                                    <li>Node.js</li>
-                                    <li>React.js</li>
-                                    <li>Express.js</li>
-                                    <li>CRUD</li>
-                                    <li>RestAPI</li>
-                                    <li>BCrypt</li>
-                                    <li>jsonwebtoken</li>
-                                    <li>Email.js</li>
-                                    <li>Axios</li>
-                                    <li>Logs</li>
-                                    <li>PostgreSQL</li>
-                                    <li>Sequelize</li>
-                                    <li>CSS3</li>
-                                    <li>JavaScript</li>
+                                    <li>jFrame</li>
+                                    <li>Java</li>
+                                    <li>Apache Netbeans</li>
+                                    <li>Game Design</li>
                                     <li>Front-End</li>
                                     <li>Back-End</li>
-                                    <li>Full-Stack</li>
-                                    <li>Web Components</li>
-                                    <li>React Hooks & Props</li>
-                                    <li>Responsive Web Design</li>
-                                    <li>CI/CD & Autodeployment</li>
-                                    <li>HTML5 - semantic, video, canvas</li>
                                 </ul>
                             </div>
                             <div className="section">
@@ -186,7 +158,7 @@ const Project6 = () => {
                                 <ul>
                                     <li>Download the Full-Stack source code at  
                                         <span className="fancy">
-                                            <a target="_blank" title="Tasty Bites" href="https://github.com/WarrenGSlice/CST-326">  _Source Code Link</a>
+                                            <a target="_blank" title="Tasty Bites" href="https://github.com/WarrenGSlice/Uno-Game?tab=readme-ov-file">  _Source Code Link</a>
                                         </span>
                                     </li>
                                 </ul>
@@ -218,4 +190,4 @@ const Project6 = () => {
     );
 };
 
-export default Project6;
+export default Project9;

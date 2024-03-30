@@ -1,0 +1,5 @@
+.grid-list .back.active,
+.grid-list .imgs:not(.active) {
+    display: none;
+
+}

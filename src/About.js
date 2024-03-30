@@ -4,6 +4,8 @@ import './About.css';
 import Logo from "./Logo";
 import Portfolio from "./Portfolio";
 import { Link } from 'react-router-dom';
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
 
 
 const About = () => {
@@ -177,11 +179,11 @@ const About = () => {
 
     return (
         
-    <div>
+    <div >
     
-    <main id="page-content" data--touch-swipe="[object Object]">
-      <section className="current">
-        <div>
+    <main id="page-content" data--touch-swipe="[object Object]" >
+      <section className="current" >
+        <div >
           <div className="page-control">
             <a href="/portfolio" title="Web Development Portfolio" className="next" element={<Portfolio/>}>
               <span>
@@ -193,7 +195,7 @@ const About = () => {
               <a target="" href="https://github.com/warrengslice" title="@warrengslice">FOLLOW ON GITHUB</a>
             </div>
           </div>
-          <div className="about-container">
+          <div className="about-container" >
               
               <div className="content game-container" id="about" 
               data-stage="94b575e9dd849bc834bf0c2f808fc2391bcc8b93f459eab0dc89e98ca6dedced" 
@@ -565,11 +567,14 @@ const About = () => {
                   </address>
                 </div>
                 <div>
-                <div className="game">
+                <div className="game" >
+                  <div id="stars"></div>
+                  <div id="stars2"></div>
+                  <div id="stars3"></div>
                   <div id="spaceship" className="spaceship" ref={spaceshipRef}></div>
                   <div id="health-bar" className="health-bar" style={{ width: `${health}%` }}></div>
-                  <div className="destroy">
-                  <div>
+                  <div className="destroy" >
+                  <div >
                   {showWinMessage && (
                     <div className="win-message">
                     <h2>Congratulations!</h2>
@@ -671,7 +676,7 @@ const About = () => {
 
             
             
-              <div className="about-list pages">
+              <div className="about-list pages" >
                 <div className="wrapper">
                   <ul className="grid-list cf_">
                     <li className="item repo">
