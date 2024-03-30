@@ -382,7 +382,7 @@
                     
                     .spaceship {
                       display: none;
-                      background-image: url('C:\Users\warre\OneDrive\Documents\CST-451\portfolio\src\images\spaceship.png');
+                      background-image: url('/src/images/spaceship.png');
                       background-size: cover; /* Ensure the image covers the entire space */
                       position: absolute; /* Position the spaceship */
                       height: 150px;
