@@ -237,7 +237,13 @@
                         border-radius:0!important
                       }
                       canvas,img{image-rendering:optimin izeSpeed;image-rendering:-moz-crisp-edges;image-rendering:-webkit-optimize-contrast;image-rendering:optimize-contrast;-ms-interpolation-mode:nearest-neighbor}
-                      img[src$=".gif"],img[src$=".png"]{image-rendering:-moz-crisp-edges;image-rendering:-o-crisp-edges;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;-ms-interpolation-mode:nearest-neighbor}
+                      img[src$=".gif"],img[src$=".png"]{
+                        image-rendering:-moz-crisp-edges;
+                        image-rendering:-o-crisp-edges;
+                        image-rendering:-webkit-optimize-contrast;
+                        image-rendering:crisp-edges;
+                        -ms-interpolation-mode:nearest-neighbor
+                      }
                       #page-header .view li,.cf_,.game .message li{display:inline-block}#page-header .view html[xmlns] li,.game .message html[xmlns] li,html[xmlns] #page-header .view li,html[xmlns] .cf_,html[xmlns] .game .message li{display:block}
                       #page-header .view * html li,* html #page-header .view li,* html .cf_,* html .game .message li,.game .message * html li{
                         height:1%

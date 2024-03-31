@@ -654,11 +654,12 @@ const About = () => {
                   
                   <meta itemProp="dateModified" content="3-22-2024"/>
                   <meta itemProp="dateCreated" content="3-08-2024"/>
-                  <link itemProp="url" href="https://warrenpetersonportfolio.com"/>
+                  <link itemProp="url" href="https://warren-peterson-portfolio.com"/>
                   <link itemProp="keywords" href="web developer portfolio, web developer, portfolio, UI/UX specialist, react, react native, javascript"/>
                   <meta itemProp="genre" content="Web Developer Portfolio"/>
                   <meta itemProp="award" content="https://thefwa.com/cases/web-components-are-awesome"/>
-                  <meta itemProp="timeRequired" content="5 years"/><link itemProp="primaryImageOfPage" href="https://warrenpetersonportfolio.com/images/warren-peterson-web-developer-portfolio.gif"/>
+                  <meta itemProp="timeRequired" content="5 years"/>
+                  <link itemProp="primaryImageOfPage" href="https://i.imgur.com/ELYBbMp.png"/>
                   <span itemProp="author" itemScope="" itemType="http://schema.org/Person">
                     <meta itemProp="name" content="Warren Peterson"/>
                     <meta itemProp="image" content="https://warrenpetersonportfolio.com/images/warren-peterson-oil.jpg"/>
@@ -666,7 +667,6 @@ const About = () => {
                     <meta itemProp="description" content="UI/UX developer specialist. React, React Native consultant. Remotely available from UTC+1 to UTC-8."/>
                     <meta itemProp="email" content="warrenpeterson141414@gmail.com"/>
                     <meta itemProp="owns" content="https://warrenpetersonportfolio.com"/>
-                    <meta itemProp="owns" content="https://dermatomanoela.com.br"/>
                     <meta itemProp="knowsLanguage" content="English, Spanish"/>
                   </span>
                   <canvas className="explode" height="969" width="1305"></canvas>
