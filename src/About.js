@@ -180,7 +180,6 @@ const About = () => {
     return (
         
     <div >
-    
     <main id="page-content" data--touch-swipe="[object Object]" >
       <section className="current" >
         <div >
@@ -196,12 +195,13 @@ const About = () => {
             </div>
           </div>
           <div className="about-container" >
-              
               <div className="content game-container" id="about" 
               data-stage="94b575e9dd849bc834bf0c2f808fc2391bcc8b93f459eab0dc89e98ca6dedced" 
               itemScope="" itemType="http://schema.org/WebSite"
               ref={gameContainerRef}>
-                
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
                 <div className="game-lettering visible">
                   <h3>
                     <span>
@@ -568,9 +568,9 @@ const About = () => {
                 </div>
                 <div>
                 <div className="game" >
-                  <div id="stars"></div>
-                  <div id="stars2"></div>
-                  <div id="stars3"></div>
+                <div id="stars"></div>
+                <div id="stars2"></div>
+                <div id="stars3"></div>
                   <div id="spaceship" className="spaceship" ref={spaceshipRef}></div>
                   <div id="health-bar" className="health-bar" style={{ width: `${health}%` }}></div>
                   <div className="destroy" >

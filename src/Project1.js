@@ -40,8 +40,10 @@ const Project1 = () => {
                 </div>
             </div>
             <div className="content pages" id="portfolio">
+                <div id="stars"></div>
                 <article itemScope="" itemType="https://schema.org/WebSite" className="centered">
                     <div className="wrapper">
+                        
                         <header>
                             <h1 itemProp="name">Player Projector</h1>
                             <h2 itemProp="description">Full Stack Fantasy Football Rankings Editor<br/> ReactJS Application uses REST API ExpressJS Micro Service Architecture</h2>

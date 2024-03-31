@@ -40,6 +40,7 @@ const Project2 = () => {
                 </div>
             </div>
             <div className="content pages" id="portfolio">
+            <div id="stars"></div>
                 <article itemScope="" itemType="https://schema.org/WebSite" className="centered">
                     <div className="wrapper">
                         <header>
