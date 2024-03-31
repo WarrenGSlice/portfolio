@@ -6,7 +6,7 @@ import 'react-awesome-slider/dist/styles.css';
 
 const Portfolio = (props) => {
     const [isHover, setHover] = useState(false);
-
+    const [selectedFilter, setSelectedFilter] = useState('Show All'); // State variable to keep track of selected filter
 
     const toggleHover = () => {
         setHover(!isHover);
@@ -278,6 +278,39 @@ const Portfolio = (props) => {
         document.getElementById("imgs10").classList.remove('active');      
     };
 
+    const handleFilterClick = (filter) => {
+        setSelectedFilter(filter); // Update selected filter state when a filter button is clicked
+        filterProjects(filter); // Filter projects based on the selected filter
+    };
+
+    const filterProjects = (filter) => {
+        const projects = document.querySelectorAll('.item'); // Get all project elements
+        projects.forEach(project => {
+            const tags = project.querySelectorAll('.tags ul li');
+            let match = false;
+            tags.forEach(tag => {
+                if (tag.textContent.toUpperCase() === filter.toUpperCase()) {
+                    match = true;
+                }
+            });
+            if (filter === 'Show All' || match) {
+                project.classList.remove('hidden'); // Show project if it matches the filter or if 'Show All' is selected
+            } else {
+                project.classList.add('hidden'); // Otherwise, hide the project
+            }
+        });
+        updateFilterText(filter);
+    };
+
+    const updateFilterText = (filter) => {
+        const filterText = document.querySelector('.filter-text');
+        if (filter === 'Show All') {
+            filterText.textContent = `Showing all projects. Use the filter to list them by skill or technology.`;
+        } else {
+            filterText.textContent = `Showing all projects using ${filter}.`;
+        }
+    };
+
     return ( 
     <main  id="page-content" className={isHover ? "hover" : "hidden"} >
         <section className="loader"></section>
@@ -309,90 +342,25 @@ const Portfolio = (props) => {
 				                    <h1>web developer portfolio</h1>
 				                    <h3>From Web Components and UI/UX animations to React.JS, Angular.JS, Spring Boot, PHP, ASP.NET, and Node.JS. Check out my latest web software development portfolio projects.</h3>
 				                    <div className="filters hidden">
-					                    <ul>
-						                    <li className="active" title="Show All Projects">
-							                    <span>Show All</span>
-						                    </li>
-                                            <li title="Filter by FRONT-END">
-                                                <span>FRONT-END</span>
+                                    <ul>
+                                        {['Show All', 'FRONT-END', 'BACK-END', 'FULL-STACK', 
+                                            'HTML5', 'REACTJS', 'EXPRESSJS', 'JAVASCRIPT', 
+                                            'NODEJS', 'SPRING', '.NET', 'RESTAPI', 
+                                            'CSS', 'POSTGRESQL', 'MYSQL', 'MSSQL', 
+                                            'UI/UX DESIGN', 'ANIMATIONS', 'GAME DESIGN', 'AGILE', 
+                                            'JAVA', 'C#', 'C++', 'JQUERY', 
+                                            'PHP', 'TYPESCRIPT', 'ARTWORK']
+                                            .map((filter, index) => (
+                                            <li 
+                                                key={index} 
+                                                title={`Filter by ${filter}`} 
+                                                className={selectedFilter === filter ? 'active' : ''} 
+                                                onClick={() => handleFilterClick(filter)}>
+                                                <span>{filter}</span>
                                             </li>
-                                            <li title="Filter by BACK-END">
-                                                <span>BACK-END</span>
-                                            </li>
-                                            <li title="Filter by FULL-STACK">
-                                                <span>FULL-STACK</span>
-                                            </li>
-                                            <li title="Filter by HTML5">
-                                                <span>HTML5</span>
-                                            </li>
-                                            <li title="Filter by REACTJS">
-                                                <span>REACTJS</span>
-                                            </li>
-                                            <li title="Filter by EXPRESSJS">
-                                                <span>EXPRESSJS</span>
-                                            </li>
-                                            <li title="Filter by JAVASCRIPT">
-                                                <span>JAVASCRIPT</span>
-                                            </li>
-                                            <li title="Filter by NODEJS">
-                                                <span>NODEJS</span>
-                                            </li>
-                                            <li title="Filter by SPRING">
-                                                <span>SPRING</span>
-                                            </li>
-                                            <li title="Filter by .NET">
-                                                <span>.NET</span>
-                                            </li>
-                                            <li title="Filter by RESTAPI">
-                                                <span>RESTAPI</span>
-                                            </li>
-                                            <li title="Filter by CSS">
-                                                <span>CSS</span>
-                                            </li>
-                                            <li title="Filter by POSTGRESQL">
-                                                <span>POSTGRESQL</span>
-                                            </li>
-                                            <li title="Filter by MYSQL">
-                                                <span>MYSQL</span>
-                                            </li>
-                                            <li title="Filter by MSSQL">
-                                                <span>MSSQL</span>
-                                            </li>
-                                            <li title="Filter by UI/UX DESIGN">
-                                                <span>UI/UX DESIGN</span>
-                                            </li>
-                                            <li title="Filter by ANIMATIONS">
-                                                <span>ANIMATIONS</span>
-                                            </li>
-                                            <li title="Filter by GAME DESIGN">
-                                                <span>GAME DESIGN</span>
-                                            </li>
-                                            <li title="Filter by AGILE">
-                                                <span>AGILE</span>
-                                            </li>
-                                            <li title="Filter by JAVA">
-                                                <span>JAVA</span>
-                                            </li>
-                                            <li title="Filter by C#">
-                                                <span>C#</span>
-                                            </li>
-                                            <li title="Filter by C++">
-                                                <span>C++</span>
-                                            </li>
-                                            <li title="Filter by JQUERY">
-                                                <span>JQUERY</span>
-                                            </li>
-                                            <li title="Filter by PHP">
-                                                <span>PHP</span>
-                                            </li>
-                                            <li title="Filter by TYPESCRIPT">
-                                                <span>TYPESCRIPT</span>
-                                            </li>
-                                            <li title="Filter by ARTWORK">
-                                                <span>ARTWORK</span>
-                                            </li>
-					                    </ul>
-					                    <small>Showing all projects. Use the filter to list them by skill or technology.</small>
+                                        ))}
+                                    </ul>
+					                    <small className="filter-text">Showing all projects using. Use the filter to list them by skill or technology.</small>
 				                        <em>Filtering Projects</em>
                                     </div>
 			                </header>
@@ -414,18 +382,20 @@ const Portfolio = (props) => {
                                                         <ul>
                                                             <li>WEBAPP</li>
                                                             <li>HTML5</li>    
-                                                            <li>CSS MODULES</li>
+                                                            <li>CSS</li>
                                                             <li>ANIMATIONS</li>
                                                             <li>REACTJS</li>
-                                                            <li>EXPRESS</li>
-                                                            <li className="hidden">CSS3</li>
+                                                            <li>EXPRESSJS</li>
+                                                            <li className="hidden">NODEJS</li>
+                                                            <li className="hidden">AGILE</li>
                                                             <li className="hidden">RESTAPI</li>
-                                                            <li className="hidden">SASS</li>
+                                                            <li className="hidden">JAVASCRIPT</li>
                                                             <li className="hidden">TYPESCRIPT</li>
                                                             <li className="hidden">MYSQL</li>
                                                             <li className="hidden">FRONT-END</li>
                                                             <li className="hidden">BACK-END</li>
                                                             <li className="hidden">FULL-STACK</li>
+                                                            <li className="hidden">UI/UX DESIGN</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -455,12 +425,13 @@ const Portfolio = (props) => {
                                                         <ul>
                                                             <li>WEBSITE</li>
                                                             <li>HTML5</li>     
-                                                            <li>SPRINGBOOT</li>
+                                                            <li>SPRING</li>
                                                             <li>ANIMATIONS</li>
                                                             <li>UI/UX DESIGN</li>
                                                             <li>PHOTOSHOP</li>
                                                             <li>ILLUSTRATOR</li>
-                                                            <li className="hidden">CSS3</li>
+                                                            <li>JAVASCRIPT</li>
+                                                            <li className="hidden">CSS</li>
                                                             <li className="hidden">JAVA</li>
                                                             <li className="hidden">ARTWORK</li>
                                                             <li className="hidden">FRONT-END</li>
@@ -493,10 +464,11 @@ const Portfolio = (props) => {
                                                         <ul>
                                                             <li>WEBAPP</li>
                                                             <li>HTML5</li>
-                                                            <li>CSS3</li>
+                                                            <li>CSS</li>
                                                             <li>JAVA</li>
                                                             <li>ANIMATIONS</li>
-                                                            <li>SPRINGBOOT</li>      
+                                                            <li>SPRING</li>  
+                                                            <li>RESTAPI</li>      
                                                             <li className="hidden">MYSQL</li>
                                                             <li className="hidden">CRUD</li>
                                                             <li className="hidden">AGILE</li>
@@ -505,6 +477,7 @@ const Portfolio = (props) => {
                                                             <li className="hidden">FULL-STACK</li>
                                                             <li className="hidden">SPRINGSECURITY</li>
                                                             <li className="hidden">OAUTH</li>
+                                                            <li className="hidden">UI/UX DESIGN</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -535,13 +508,16 @@ const Portfolio = (props) => {
                                                             <li>WEBAPP</li>
                                                             <li>ANIMATIONS</li>
                                                             <li>REACTJS</li>
+                                                            <li>NODEJS</li>
                                                             <li>SNAPSVG</li>
                                                             <li className="hidden">WEBSITE</li>
                                                             <li className="hidden">FRONT-END</li>
                                                             <li className="hidden">HTML5</li>
-                                                            <li className="hidden">CSS3</li>
+                                                            <li className="hidden">CSS</li>
                                                             <li className="hidden">JAVASCRIPT</li>
                                                             <li className="hidden">UI/UX DESIGN</li>
+                                                            <li className="hidden">GAME DESIGN</li>
+                                                            <li className="hidden">AGILE</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -574,7 +550,8 @@ const Portfolio = (props) => {
                                                             <li>QUEUE</li>
                                                             <li>VISUALSTUDIO</li>
                                                             <li>GAME DESIGN</li>
-                                                            <li className="hidden">BACK-END</li></ul>
+                                                            <li className="hidden">BACK-END</li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                                 <picture id="imgs5" className="imgs">
@@ -604,13 +581,17 @@ const Portfolio = (props) => {
                                                             <li>FRONT-END</li>
                                                             <li>JAVASCRIPT</li>
                                                             <li>HTML5</li>
-                                                            <li>CSS3</li>
+                                                            <li>CSS</li>
                                                             <li>ANIMATIONS</li>
                                                             <li>POSTGRESQL</li>
                                                             <li>BACK-END</li>
                                                             <li>FULL-STACK</li>
+                                                            <li className="hidden">NODEJS</li>
+
                                                             <li className="hidden">WEBAPP</li>
-                                                            <li className="hidden">CSS3</li>
+                                                            <li className="hidden">AGILE</li>
+                                                            <li className="hidden">EXPRESSJS</li>
+                                                            <li className="hidden">REACTJS</li>
                                                             <li className="hidden">RESTAPI</li>
                                                             <li className="hidden">SECURITYJS</li>
                                                             <li className="hidden">UI/UX DESIGN</li>
@@ -645,9 +626,16 @@ const Portfolio = (props) => {
                                                             <li>ASP NET CORE</li>
                                                             <li>MVC</li>
                                                             <li>GAME DESIGN</li>
+                                                            <li>AGILE</li>
+                                                            <li>RESTAPI</li>      
+
                                                             <li className="hidden">WEBAPP</li>
+                                                            <li className="hidden">.NET</li>
+                                                            <li className="hidden">JQUERY</li>
+                                                            <li className="hidden">JAVSCRIPT</li>
                                                             <li className="hidden">UI/UX DESIGN</li>
-                                                            <li className="hidden">CSS3</li>
+                                                            <li className="hidden">CSS</li>
+                                                            <li className="hidden">HTML5</li>
                                                             <li className="hidden">MSSQL</li>
                                                             <li className="hidden">FRONT-END</li>
                                                             <li className="hidden">BACK-END</li>
@@ -684,6 +672,8 @@ const Portfolio = (props) => {
                                                             <li>MYSQL</li>
                                                             <li>JAVASCRIPT</li>
                                                             <li>FRONT-END</li>
+                                                            <li>RESTAPI</li>      
+
                                                             <li className="hidden">WEBAPP</li>
                                                             <li className="hidden">CSS3</li>
                                                             <li className="hidden">BACK-END</li>
@@ -749,7 +739,7 @@ const Portfolio = (props) => {
                                                         <ul>
                                                             <li>C#</li>
                                                             <li>ANIMATIONS</li>
-                                                            <li>.NET FRAMEWORK</li>
+                                                            <li>.NET</li>
                                                             <li>UX DESIGN</li>
                                                             <li>GAMEDESIGN</li>
                                                             <li>FRONT-END</li>
