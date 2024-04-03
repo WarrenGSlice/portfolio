@@ -517,7 +517,15 @@
                       @media all and (max-width:1300px){.pages .wrapper{max-width:760px}}
                       @media all and (max-width:1100px){.pages .wrapper{max-width:700px}}
                       @media all and (max-width:900px){.pages .wrapper{max-width:600px}}
-                      @media all and (max-width:800px){.pages .wrapper{max-width:500px}}.pages header{position:relative}.pages .filter{display:none}.pages footer{line-height:20px;color:#8a8a8a;margin-top:42px}.pages footer nav{margin-bottom:12px}.pages footer nav:after{content:"";height:1px;width:40px}.pages footer nav a{padding:4px 6px}.pages footer nav span{margin:0 4px;display:inline-block}.pages footer h4{color:#cacaca;font-weight:700;margin-bottom:2px;font-size:1.15em;line-height:1.7em}.pages footer p{font-size:1em;line-height:1.45em}.twitter-follow-button{margin-top:1em;display:inline-block;margin-right:5px}.disqus{padding:2em;background-color:#363636;margin:25px 20px;position:relative;min-height:calc(52px + 4em)}.disqus .disqus-loader{display:block;position:absolute;left:calc(50% - 27px);top:calc(50% - 26px);height:52px;width:54px}.disqus .disqus-loader.hidden{display:none}.disqus .disqus-loader.animated:after{transform:rotate(360000deg)}.disqus .disqus-loader:after,.disqus .disqus-loader:before{content:" ";width:54px;height:52px;position:absolute;top:0;left:0}.disqus .disqus-loader:before{background:url('https://caferati.me/images/disqus-loader.png') 0 -52px no-repeat}.disqus .disqus-loader:after{box-sizing:border-box;width:26px;height:26px;position:absolute;top:13px;left:15px;border-width:3px;border-style:solid;border-color:rgba(223,228,237,.4) transparent;border-radius:13px;transform-origin:50% 50% 0;transition:transform 700s linear}
+                      @media all and (max-width:800px){
+                        .pages .wrapper{max-width:500px}
+                      }
+                      @media all and (max-width:700){
+                        .pages .wrapper{max-width:400px}
+                      }
+                      
+
+                        .pages header{position:relative}.pages .filter{display:none}.pages footer{line-height:20px;color:#8a8a8a;margin-top:42px}.pages footer nav{margin-bottom:12px}.pages footer nav:after{content:"";height:1px;width:40px}.pages footer nav a{padding:4px 6px}.pages footer nav span{margin:0 4px;display:inline-block}.pages footer h4{color:#cacaca;font-weight:700;margin-bottom:2px;font-size:1.15em;line-height:1.7em}.pages footer p{font-size:1em;line-height:1.45em}.twitter-follow-button{margin-top:1em;display:inline-block;margin-right:5px}.disqus{padding:2em;background-color:#363636;margin:25px 20px;position:relative;min-height:calc(52px + 4em)}.disqus .disqus-loader{display:block;position:absolute;left:calc(50% - 27px);top:calc(50% - 26px);height:52px;width:54px}.disqus .disqus-loader.hidden{display:none}.disqus .disqus-loader.animated:after{transform:rotate(360000deg)}.disqus .disqus-loader:after,.disqus .disqus-loader:before{content:" ";width:54px;height:52px;position:absolute;top:0;left:0}.disqus .disqus-loader:before{background:url('https://caferati.me/images/disqus-loader.png') 0 -52px no-repeat}.disqus .disqus-loader:after{box-sizing:border-box;width:26px;height:26px;position:absolute;top:13px;left:15px;border-width:3px;border-style:solid;border-color:rgba(223,228,237,.4) transparent;border-radius:13px;transform-origin:50% 50% 0;transition:transform 700s linear}
                       #disqus_thread>div{display:none!important}
                       #disqus_thread img.ninja{left:14%}
                       #disqus_thread iframe{opacity:.7!important}a.github-fork{position:fixed;display:block;width:330px;z-index:901;right:-62px;top:80px;background-size:100% auto;cursor:pointer;background-color:#5c5c5c;color:#f0f0f0;padding:1em 0 .95em;line-height:1.04em;text-decoration:none;font-family:MontSerrat,Tahoma,Arial,sans-serif;font-weight:700;font-size:1.04em;box-shadow:-2px 3px 1px rgba(0,0,0,.23);opacity:0;-moz-transform:rotate(45deg) translate3d(0,-170px,0);-ms-transform:rotate(45deg) translate3d(0,-170px,0);-webkit-transform:rotate(45deg) translate3d(0,-170px,0);transform:rotate(45deg) translate3d(0,-170px,0);-moz-transition:background-color .2s ease-out,-moz-transform .45s cubic-bezier(.15,0,0,1) 2.15s,opacity .2s 2.15;-o-transition:background-color .2s ease-out,-o-transform .45s cubic-bezier(.15,0,0,1) 2.15s,opacity .2s 2.15;-webkit-transition:background-color .2s ease-out,-webkit-transform .45s cubic-bezier(.15,0,0,1),opacity .2s 2.15;transition-delay:0s,2.15s,0s;transition:background-color .2s ease-out,transform .45s cubic-bezier(.15,0,0,1) 2.15s,opacity .2s 2.15}.page-ready a.github-fork{opacity:1;-moz-transform:rotate(45deg) translate3d(0,0,0);-ms-transform:rotate(45deg) translate3d(0,0,0);-webkit-transform:rotate(45deg) translate3d(0,0,0);transform:rotate(45deg) translate3d(0,0,0)}a.github-fork:hover{background-color:#4b4b4b;color:#fff}a.github-fork:before{content:" ";background:url('https://caferati.me/images/dashes.svg') repeat-x top left;position:absolute;top:3px;width:100%;left:0;height:1px;z-index:1}a.github-fork:after{content:" ";background:url('https://caferati.me/images/dashes.svg') repeat-x top left;position:absolute;bottom:2px;z-index:1;left:0;width:100%;height:1px}
@@ -1066,7 +1074,9 @@
                         animation: Gradient 30s ease forwards infinite;
                       }
                       #contact .lets-talk{margin:80px 20px 0}
-                      #contact .submit{text-align:left}
+                      /*#contact .submit{}*/
+                      
+                     
                       #contact .share{text-align:left;margin:70px 0 0}
                       #contact .share h4{font-size:1.4em;line-height:1.7em;color:#8a8a8a;font-weight:700;font-family:MontSerrat,Tahoma,Arial,sans-serif;font-weight:700}#contact .share p{margin-bottom:16px}#contact .share awesome-button{margin:0 8px 8px 0}#contact h1{text-transform:none}
                       @media all and (max-width:600px){
@@ -1077,6 +1087,18 @@
                       @media all and (max-height:600px){#contact{display:block}
                       #contact .lets-talk{margin-top:65px}
                       #contact .share{margin-top:65px}}
+                      @media all and (min-width:425px){
+                        #contact .submit{
+                          
+                          text-align: center;
+                        }
+                      }
+                      @media all and (min-width:600px){
+                        #contact .submit{
+                          text-align: left;
+                        }
+                      }
+                      
                       .lets-talk{position:relative;-moz-transition:-moz-transform .16s ease-out;-o-transition:-o-transform .16s ease-out;-webkit-transition:-webkit-transform .16s ease-out;transition:transform .16s ease-out}
                       .lets-talk form{position:relative}
                       .lets-talk.textarea .input-block{height:auto}
@@ -1290,7 +1312,12 @@
                         -webkit-transition:background .4s ease-out,height 50ms ease-out;
                         transition:background .4s ease-out,height 50ms ease-out
                       }
-
+                      @media all and (max-width:425px){
+                        .input-block input, .input-block textarea, .input-block .i-svg {
+                          position: absolute;
+                          left: 4%;
+                        }
+                      }
                       .shadow-area{position:absolute;padding:17px 14px 10px 33px;line-height:18px;resize:none;font-size:18px;font-family:Lato,Helvetica,Arial,sans-serif;font-weight:700}
                       #demo{overflow:hidden;display:table;background-color:#2f2f2f}
                       #demo .awesome{display:table-cell;vertical-align:middle}
@@ -1637,6 +1664,7 @@
                           text-transform: capitalize;
                         }
                         .content.pages header p{font-size:1em;line-height:1.5em}
+                        @media all and (max-width:425px){.content.pages header p{margin-left:-8%;scale: 0.8;}}
                         #page-header nav{padding:10% 0}
                         .grid-list .screen span:before{font-size:9px}
                         .game .destroy{

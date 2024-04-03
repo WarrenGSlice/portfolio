@@ -370,7 +370,7 @@ const Contact = () => {
                                             </awesome-button>
                                             )}
                                             {currentStep === 3 && (
-                                            <awesome-button color="teal" progress="true">
+                                            <awesome-button color="teal" progress="true" id="contact-submit">
                                                 <a  onClick={(e) => handleToggleSent(e)} disabled={loading} 
                                                 className={`${formData.message ? 'aws-btn aws-btn--primary aws-btn--teal aws--disabled aws-btn--visible' : 'aws-btn aws-btn--disabled aws-btn--primary aws-btn--visible'}`}>
                                                     <span className="aws-btn__container">
