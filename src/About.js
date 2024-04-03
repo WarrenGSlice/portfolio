@@ -65,8 +65,8 @@ const About = () => {
   
     const laser = document.createElement('div');
     laser.className = 'laser';
-    laser.style.width = '55px';
-    laser.style.height = '55px';
+    laser.style.width = '30px';
+    laser.style.height = '45px';
     laser.style.backgroundColor = 'green';
     const spaceshipLeft = spaceship.offsetLeft;
     if (spaceshipLeft !== undefined) {
@@ -179,8 +179,8 @@ const About = () => {
 
     return (
         
-    <div >
-    <main id="page-content" data--touch-swipe="[object Object]" >
+    <div className="">
+    <main id="page-content" data--touch-swipe="[object Object]" className="" >
       <section className="current" >
         <div >
           <div className="page-control">
