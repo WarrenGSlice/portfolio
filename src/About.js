@@ -1,12 +1,9 @@
 
 import React, {useState, useEffect, useRef} from "react";
 import './About.css';
-import Logo from "./Logo";
-import Portfolio from "./Portfolio";
 import { Link } from 'react-router-dom';
-import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
-
+import { backInOut, motion } from "framer-motion";
 
 const About = () => {
   const [health, setHealth] = useState(1000);
@@ -18,6 +15,7 @@ const About = () => {
   const [activeLasers, setActiveLasers] = useState([]);
   const [activeSpaceship, setActiveSpaceship] = useState(false);
   const [gameOver, setGameOver] = useState(false);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   //const spaceship = document.getElementById('spaceship');
   const gameContainer = gameContainerRef.current;
   const spaceshipRef = useRef(null);
@@ -172,36 +170,62 @@ const About = () => {
         textElement.style.visibility = 'visible';
     });
     startGame();
-};
-  
+  };
 
+  /*const prefetchPortfolioPage = () => {
+    import(/* webpackPrefetch: true *//* './Portfolio');
+  };
 
+  const nextPageHandler = (event) => {
+    event.preventDefault();
+    
+    prefetchPortfolioPage();
+    setIsTransitioning(true);
+
+    
+    // Delay the page redirection until after the transition completes
+    setTimeout(() => {
+      // Redirect to the next page
+      window.location.href = '/portfolio';
+    }, 2000);
+  };*/
 
     return (
-        
-    <div className="">
+    <div >
     <main id="page-content" data--touch-swipe="[object Object]" className="" >
-      <section className="current" >
-        <div >
-          <div className="page-control">
-            <a href="/portfolio" title="Web Development Portfolio" className="next" element={<Portfolio/>}>
-              <span>
-                <Link to='/portfolio'>Portfolio</Link>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <section className=" current "  >
+        <div className="" >
+          <div className="page-control ">
+            <Link to="/portfolio"title="Web Development Portfolio" className="next"    >
+              <span >Portfolio
               </span>
               <em></em>
-            </a>
+            </Link>
             <div className="ribbon">
               <a target="" href="https://github.com/warrengslice" title="@warrengslice">FOLLOW ON GITHUB</a>
             </div>
           </div>
-          <div className="about-container" >
-              <div className="content game-container" id="about" 
-              data-stage="94b575e9dd849bc834bf0c2f808fc2391bcc8b93f459eab0dc89e98ca6dedced" 
-              itemScope="" itemType="http://schema.org/WebSite"
-              ref={gameContainerRef}>
-                <div id="stars"></div>
-                <div id="stars2"></div>
-                <div id="stars3"></div>
+          
+
+          <div className="about-container"  >
+          
+              <motion.div 
+                className={isTransitioning ? 'exiting' : 'content game-container'} 
+                id="about" 
+                data-stage="94b575e9dd849bc834bf0c2f808fc2391bcc8b93f459eab0dc89e98ca6dedced" 
+                itemScope="" itemType="http://schema.org/WebSite"
+                ref={gameContainerRef}
+                initial={{ x: '100%', opacity: 1 }}
+                    animate={{ x: 0, opacity: 1, transition:backInOut }}
+                    exit={{ x: '-100%', opacity: 0, transition: { duration: 0.1} }}
+                    transition={{ delay: 0, duration: .5 }}
+
+              >
+                {/*<PageTransition>*/}
+                
                 <div className="game-lettering visible">
                   <h3>
                     <span>
@@ -670,9 +694,10 @@ const About = () => {
                     <meta itemProp="knowsLanguage" content="English, Spanish"/>
                   </span>
                   <canvas className="explode" height="969" width="1305"></canvas>
-
                   
-                </div>
+                  {/*</PageTransition>*/}
+                </motion.div>
+                
 
             
             
@@ -789,35 +814,10 @@ const About = () => {
                 </div>
               </div>
             </div>
+            
           </div>
-        </section>
-        <section className="loader">
-
         </section>
       </main>
-      <div id="page-loader" className="avatar-loader go-down">
-        <div className="avatar active first">
-          <div className="avatar-wrapper">
-            <Logo/>
-            <img className="ninja" alt="Avatar" src="/images/avatar.svg"/>
-          </div>
-        </div>
-      </div>
-
-
-      <div id="loom-companion-mv3" >
-  <section id="shadow-host-companion"></section>
-</div>
-<div id="loader-bar"></div>
-<div className="quick-search hidden done">
-  <div className="content">
-    <span className="close">
-
-    </span>
-    <input type="text" name="search" value="" autoComplete="off"/>
-    <div className="results"></div>
-  </div>
-</div>
 </div>
     );
     

@@ -1,6 +1,8 @@
 import React, {useState, useEffect, useRef } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
+import { motion, backInOut } from "framer-motion";
+
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -13,6 +15,7 @@ const Contact = () => {
     const [isInputFocused, setIsInputFocused] = useState(false);
     const [translateXValue, setTranslateXValue] = useState(0); 
     const [translateMsgXValue, setTranslateMsgXValue] = useState(0); 
+    const [isTransitioning, setIsTransitioning] = useState(false);
     const [nameInputWidth, setNameInputWidth] = useState(0);
     const [nameLength, setNameLength] = useState(0);
     const nameInputRef = useRef(null);
@@ -232,6 +235,9 @@ const Contact = () => {
     return (
         
         <main id="page-content" >
+            <div id="stars"></div>
+            <div id="stars1"></div>
+            <div id="stars2"></div>
             <section className="current">
             {/*Object.keys(errors).length === 0 && submitting ? ( ) : null*/}
                 <div className={`filters ${isSent ? '' : 'hidden'}`}>
@@ -250,9 +256,19 @@ const Contact = () => {
                             <em></em>
                         </a>
                     </div>
-                    <div className="content pages" id="contact">
+                    <motion.div 
+                        className="content pages" 
+                        id="contact"
+                        initial={{ x: '100%', opacity: 1 }}
+                    animate={{ x: 0, opacity: 1, transition:backInOut }}
+                    exit={{ x: '-100%', opacity: 0, transition: { duration: 0.1} }}
+                    transition={{ delay: 0, duration: .5 }}
+
+                    >
                         <div id="topContact"></div>
+                        
                         <section className="centered">
+                        {/*<PageTransition>*/}
                             <div id="stars"></div>
                             <div id="stars1"></div>
                             <div id="stars2"></div>
@@ -266,6 +282,7 @@ const Contact = () => {
                                         </span> and ~let's talk.
                                     </p>
                                 </header>
+                                
                                 <div className="lets-talk">
                                     <form method="post" autoComplete="off" action="/">
                                         <ul className="input-block">
@@ -441,10 +458,14 @@ const Contact = () => {
                                         </awesome-button>
                                     </div>
                                 </div>
+                                
                             </div>
+                            {/*</PageTransition>*/}
                         </section>
+                        
                         <div id="bottomContact"></div>
-                    </div>
+                        
+                    </motion.div>
                 </div>
             </section>
             <section className="loader"></section>
