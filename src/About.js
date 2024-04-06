@@ -3,9 +3,9 @@ import React, {useState, useEffect, useRef} from "react";
 import './About.css';
 import { Link } from 'react-router-dom';
 import 'react-awesome-slider/dist/styles.css';
-import { backInOut, motion } from "framer-motion";
+import { m, LazyMotion, domAnimation } from "framer-motion";
 
-const About = () => {
+const About = ({children}) => {
   const [health, setHealth] = useState(1000);
   const [gameStarted, setGameStarted] = useState(false);
   const gameContainerRef = useRef(null);
@@ -190,8 +190,9 @@ const About = () => {
     }, 2000);
   };*/
 
+
     return (
-    <div >
+    <div className="">
     <main id="page-content" data--touch-swipe="[object Object]" className="" >
       <div id="stars"></div>
       <div id="stars2"></div>
@@ -211,21 +212,19 @@ const About = () => {
           
 
           <div className="about-container"  >
-          
-              <motion.div 
-                className={isTransitioning ? 'exiting' : 'content game-container'} 
+
+            <LazyMotion features={domAnimation} strict >
+            
+
+              <div 
+                className="content game-container animate-about"
                 id="about" 
                 data-stage="94b575e9dd849bc834bf0c2f808fc2391bcc8b93f459eab0dc89e98ca6dedced" 
                 itemScope="" itemType="http://schema.org/WebSite"
                 ref={gameContainerRef}
-                initial={{ x: '100%', opacity: 1 }}
-                    animate={{ x: 0, opacity: 1, transition:backInOut }}
-                    exit={{ x: '-100%', opacity: 0, transition: { duration: 0.1} }}
-                    transition={{ delay: 0, duration: .5 }}
-
-              >
-                {/*<PageTransition>*/}
                 
+
+              >                
                 <div className="game-lettering visible">
                   <h3>
                     <span>
@@ -695,9 +694,11 @@ const About = () => {
                   </span>
                   <canvas className="explode" height="969" width="1305"></canvas>
                   
-                  {/*</PageTransition>*/}
-                </motion.div>
+                </div>
                 
+              
+              {children}
+              </LazyMotion>
 
             
             

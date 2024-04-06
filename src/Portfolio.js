@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Portfolio.css";
 import "./About.css";
 import 'react-awesome-slider/dist/styles.css';
-import { motion, backInOut } from "framer-motion";
+import { LazyMotion, domAnimation } from "framer-motion";
 
 
-const Portfolio = (props) => {
+const Portfolio = (props, {children}) => {
     const [isHover, setHover] = useState(false);
     const [selectedFilter, setSelectedFilter] = useState('Show All'); // State variable to keep track of selected filter
     const [isTransitioning, setIsTransitioning] = useState(false);
@@ -338,18 +338,13 @@ const Portfolio = (props) => {
                             <a target="_blank" href="https://github.com/warrengslice" title="Follow on Github">FOLLOW ON GITHUB</a>
                         </div>
                 </div>
-                
-                <motion.div 
+                <LazyMotion strict features={domAnimation}>
+                <div 
                     className="content pages" 
                     id="portfolio" 
-                    initial={{ x: '100%', opacity: 1 }}
-                    animate={{ x: 0, opacity: 1, transition:backInOut }}
-                    exit={{ x: '-100%', opacity: 0, transition: { duration: 0.1} }}
-                    transition={{ delay: 0, duration: .5 }}
 
                 >
 	                <section className="centered scene2">  
-                    {/*<PageTransition>*/}
 
                         <div id="stars"></div>
                         <div id="stars1"></div>
@@ -788,11 +783,11 @@ const Portfolio = (props) => {
                                 </p>
                             </footer>
                         </div>
-                        {/*</PageTransition>*/}
 
                     </section>
-                </motion.div>
-                
+                </div>
+                {children}
+                </LazyMotion>
             </div>
         </section>
     </main>

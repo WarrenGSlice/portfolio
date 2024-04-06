@@ -1,6 +1,6 @@
 // components/PageTransition.js
 import { useState, useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m, LazyMotion, domAnimation, motion, backInOut } from "framer-motion";
 
 const PageTransition = ({ children }) => {
   const [nextPageVisible, setNextPageVisible] = useState(false);
@@ -16,27 +16,31 @@ const PageTransition = ({ children }) => {
 
 
   return (
-    <AnimatePresence >
-    <motion.div
-      initial={{ opacity: 1, x: "-50%" }} // Initially, the page is hidden and positioned to the left
-      animate={{ opacity: 1, x: 0 }} // Animate the opacity and x position to reveal the page from left to right
-      exit={{ opacity: 1, x: "50%" }} // Animate the opacity and x position to hide the page to the right
-      transition={{ duration: .5 }} // Set the transition duration to 0.5 seconds
+    <LazyMotion features={domAnimation}>
+    <m.div
+      initial={{ x: '100%', opacity: 1 }}
+      animate={{ x: 0, opacity: 1, transition:backInOut }}
+      exit={{ x: '-100%', opacity: 0, transition: { duration: 0.1} }}
+      transition={{ delay: 0, duration: .5 }}
+      /*initial={{ x: '100%', opacity: 1 }}
+                    animate={{ x: 0, opacity: 1, transition:backInOut }}
+                    exit={{ x: '-100%', opacity: 0, transition: { duration: 0.1} }}
+                    transition={{ delay: 0, duration: .5 }}*/
     >
       {children}
-    </motion.div>
+    </m.div>
     {nextPageVisible && (
-      <motion.div
-      initial={{ opacity: 1, x: "50%" }} // Initially, the page is hidden and positioned to the left
-      animate={{ opacity: 1, x: 0 }} // Animate the opacity and x position to reveal the page from left to right
-      exit={{ opacity: 1, x: "-50%" }} // Animate the opacity and x position to hide the page to the right
-      transition={{ duration:0.5 }} // Set the transition duration to 0.5 seconds
+      <m.div
+      initial={{ x: '100%', opacity: 1 }}
+                    animate={{ x: 0, opacity: 1, transition:backInOut }}
+                    exit={{ x: '-100%', opacity: 0, transition: { duration: 0.1} }}
+                    transition={{ delay: 0, duration: .5 }}
       >
         {/* Render the next page content here */}
         {/* Example: <NextPageContent /> */}
-      </motion.div>
+      </m.div>
     )}
-  </AnimatePresence>
+  </LazyMotion>
   );
 };
 

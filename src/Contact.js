@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useRef } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
-import { motion, backInOut } from "framer-motion";
+import { LazyMotion, domAnimation } from "framer-motion";
 
 
-const Contact = () => {
+const Contact = ({children}) => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -256,19 +256,15 @@ const Contact = () => {
                             <em></em>
                         </a>
                     </div>
-                    <motion.div 
+                    <LazyMotion features={domAnimation} >
+
+                    <div 
                         className="content pages" 
                         id="contact"
-                        initial={{ x: '100%', opacity: 1 }}
-                    animate={{ x: 0, opacity: 1, transition:backInOut }}
-                    exit={{ x: '-100%', opacity: 0, transition: { duration: 0.1} }}
-                    transition={{ delay: 0, duration: .5 }}
-
                     >
                         <div id="topContact"></div>
                         
                         <section className="centered">
-                        {/*<PageTransition>*/}
                             <div id="stars"></div>
                             <div id="stars1"></div>
                             <div id="stars2"></div>
@@ -465,7 +461,9 @@ const Contact = () => {
                         
                         <div id="bottomContact"></div>
                         
-                    </motion.div>
+                    </div>
+                    {children}
+                    </LazyMotion>
                 </div>
             </section>
             <section className="loader"></section>

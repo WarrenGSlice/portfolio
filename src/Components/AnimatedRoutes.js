@@ -16,11 +16,12 @@ import Contact from "../Contact";
 
 import { AnimatePresence } from 'framer-motion';
 
-function AnimatedRoutes() {
+function AnimatedRoutes({}) {
     const location = useLocation();
   return (
-    <AnimatePresence mode='wait'>
+    <AnimatePresence mode='popLayout'  >
         <Routes location={location} key={location.pathname}>
+          
             <Route exact path="/" element={<About />}/>
             <Route exact path="/portfolio" element={<Portfolio />}/>
             <Route exact path="/project1" element={<Project1 />}/>
