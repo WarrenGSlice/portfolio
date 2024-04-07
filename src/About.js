@@ -128,8 +128,6 @@ const About = ({children}) => {
       // Remove all ships
       spaceship.style.display = 'none';
       document.getElementById("destroy-button").style.zIndex = "5000";
-      
-
     }
   };
 
@@ -169,26 +167,38 @@ const About = ({children}) => {
     textElements.forEach((textElement) => {
         textElement.style.visibility = 'visible';
     });
+    // Reset all necessary state variables
+    setGameStarted(false);
+    setWon(false);
+    setWinMessageShown(false);
+    setShowWinMessage(false);
+    setGameOver(false);
+    setActiveLasers([]);
+    setActiveSpaceship(false);
+
+    // Reset health
+    setHealth(1000);
+
+    // Remove event listeners
+    document.removeEventListener('mousemove', moveSpaceship);
+    document.removeEventListener('click', shootLaser);
+
+    // Start the game again
     startGame();
   };
 
-  /*const prefetchPortfolioPage = () => {
-    import(/* webpackPrefetch: true *//* './Portfolio');
+  const prefetchPortfolioPage = () => {
+    import(/* webpackPrefetch: true */ './Portfolio');
   };
 
   const nextPageHandler = (event) => {
     event.preventDefault();
     
     prefetchPortfolioPage();
-    setIsTransitioning(true);
 
-    
-    // Delay the page redirection until after the transition completes
-    setTimeout(() => {
-      // Redirect to the next page
+    // Redirect to the next page
       window.location.href = '/portfolio';
-    }, 2000);
-  };*/
+  };
 
 
     return (
@@ -200,7 +210,7 @@ const About = ({children}) => {
       <section className=" current "  >
         <div className="" >
           <div className="page-control ">
-            <Link to="/portfolio"title="Web Development Portfolio" className="next"    >
+            <Link to="/portfolio"title="Web Development Portfolio" className="next"  onClick={nextPageHandler}  >
               <span >Portfolio
               </span>
               <em></em>
