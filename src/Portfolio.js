@@ -428,7 +428,7 @@ const Portfolio = (props, {children}) => {
                                             </div>
                                             <div className="main">
                                                 <picture className="back">
-                                                    <video className="video" autoPlay={true} loop={true} muted={true}>
+                                                    <video className="video" preload="auto" autoPlay={true} loop={true} muted={true}>
                                                         <source src={require('./images/small-cradle-fast.mp4')} type="video/mp4"/>
                                                     </video>
                                                 </picture>
@@ -467,7 +467,7 @@ const Portfolio = (props, {children}) => {
                                             </div>
                                             <div className="main">
                                                 <picture className="back">
-                                                    <video className="vidvid" autoPlay={true} loop={true} muted={true} >
+                                                    <video className="vidvid" preload="auto" autoPlay={true} loop={true} muted={true} >
                                                         <source src={require('./images/shoe-fly-fast.mp4')} type="video/mp4"/>
                                                     </video>
                                                 </picture>
@@ -620,7 +620,7 @@ const Portfolio = (props, {children}) => {
                                             </div>
                                             <div className="main">
                                             <picture className="back">
-                                                    <video className="video" autoPlay={true} loop={true} muted={true} style={{objectFit:"none", objectPosition:"-32px -25px", width:"118%"}}>
+                                                    <video className="video" preload="auto" autoPlay={true} loop={true} muted={true} style={{objectFit:"none", objectPosition:"-32px -25px", width:"118%"}}>
                                                         <source src={require('./images/minsweeper-trim.mp4')} type="video/mp4"/>
                                                     </video>
                                                 </picture>
