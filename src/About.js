@@ -324,17 +324,6 @@ const About = ({children}) => {
                       <span className="n">U</span>
                       <span className="n">X</span>
                       <span className="n"> </span>
-                      <span className="n">j</span>
-                      <span className="n">a</span>
-                      <span className="n">v</span>
-                      <span className="n">a</span>
-                      <span className="n">s</span>
-                      <span className="n">c</span>
-                      <span className="n">r</span>
-                      <span className="n">i</span>
-                      <span className="n">p</span>
-                      <span className="n">t</span>
-                      <span className="n"> </span>
                       <span className="n">s</span>
                       <span className="n">p</span>
                       <span className="n">e</span>
@@ -348,99 +337,6 @@ const About = ({children}) => {
                       <span className="n">.</span>
                     </span>
                   </h1>
-                  <h2>
-                    <span>
-                      <span className="n">C</span>
-                      <span className="n">h</span>
-                      <span className="n">e</span>
-                      <span className="n">c</span>
-                      <span className="n">k</span>
-                      <span className="n"> </span>
-                      <span className="n">o</span>
-                      <span className="n">u</span>
-                      <span className="n">t</span>
-                      <span className="n"> </span>
-                      <span className="n">m</span>
-                      <span className="n">y</span>
-                      <span className="n"> </span>
-                      <span className="n">a</span>
-                      <span className="n">r</span>
-                      <span className="n">t</span>
-                      <span className="n">i</span>
-                      <span className="n">c</span>
-                      <span className="n">l</span>
-                      <span className="n">e</span>
-                      <span className="n">s</span>
-                      <span className="n">,</span>
-                      <span className="n"> </span>
-                      <span className="n">R</span>
-                      <span className="n">e</span>
-                      <span className="n">a</span>
-                      <span className="n">c</span>
-                      <span className="n">t</span>
-                      <span className="n"> </span>
-                      <span className="n">a</span>
-                      <span className="n">n</span>
-                      <span className="n">d</span>
-                      
-                      <span className="n"> </span>
-                      <span className="n">R</span>
-                      <span className="n">e</span>
-                      <span className="n">a</span>
-                      <span className="n">c</span>
-                      <span className="n">t</span>
-                      <span className="n"> </span>
-                      <span className="n">N</span>
-                      <span className="n">a</span>
-                      <span className="n">t</span>
-                      <span className="n">i</span>
-                      <span className="n">v</span>
-                      <span className="n">e</span>
-                      <span className="n"> </span>
-                      <span className="n">U</span>
-                      <span className="n">I</span>
-                      <span className="n"> </span>
-                      <span className="n">c</span>
-                      <span className="n">o</span>
-                      <span className="n">m</span>
-                      <span className="n">p</span>
-                      <span className="n">o</span>
-                      <span className="n">n</span>
-                      <span className="n">e</span>
-                      <span className="n">n</span>
-                      <span className="n">t</span>
-                      <span className="n">s</span>
-                      <span className="n"> </span>
-                      <span className="n">a</span>
-                      <span className="n">t</span>
-                      <span className="n"> </span>
-                      <span className="n">t</span>
-                      <span className="n">h</span>
-                      <span className="n">e</span>
-                      <span className="n"> </span>
-                    </span>
-                    <a title="labs" href="/labs">
-                      <span className="n">c</span>
-                      <span className="n">o</span>
-                      <span className="n">d</span>
-                      <span className="n">e</span>
-                      <span className="n"> </span>
-                      <span className="n">l</span>
-                      <span className="n">a</span>
-                      <span className="n">b</span>
-                      <span className="n">o</span>
-                      <span className="n">r</span>
-                      
-                      <span className="n">a</span>
-                      <span className="n">t</span>
-                      <span className="n">o</span>
-                      <span className="n">r</span>
-                      <span className="n">y</span>
-                    </a>
-                    <span>
-                      <span className="n">.</span>
-                    </span>
-                  </h2>
                   <p>
                     <span>
                       <span className="n">F</span>
@@ -545,20 +441,20 @@ const About = ({children}) => {
                       <span className="n"> </span>
                     </span>
                     <span itemProp="locationCreated">
-                      <span className="n">U</span>
+                      <span className="n">P</span>
+                      <span className="n">D</span>
                       <span className="n">T</span>
-                      <span className="n">C</span>
-                      <span className="n">−</span>
-                      <span className="n">8</span>
+                      <span className="n">10</span>
+                      <span className="n">am</span>
                       <span className="n"> </span>
                       <span className="n">t</span>
                       <span className="n">o</span>
                       <span className="n"> </span>
-                      <span className="n">U</span>
+                      <span className="n">P</span>
+                      <span className="n">D</span>
                       <span className="n">T</span>
-                      <span className="n">C</span>
-                      <span className="n">+</span>
-                      <span className="n">1</span>
+                      <span className="n">8</span>
+                      <span className="n">pm</span>
                     </span>
                     <span>
                       <span className="n">.</span>
@@ -673,12 +569,8 @@ const About = ({children}) => {
                           <span>Connect on Linkedin</span>
                         </a>
                       </li><li>
-                        <a className="instagram" target="" href="https://instagram.com/warrenpeterson@141414@gmail.com" title="Follow on Instagram">
-                          <span>Follow on Instagram</span>
-                        </a>
-                      </li><li>
-                        <a className="club" target="" href="https://webanimation.club" title="Web Animation Club Library | CSS Transition Callbacks">
-                          <span>WAC</span>
+                        <a className="behance" target="" href="https://www.behance.net/warrenpeterson3" title="Follow on Behance">
+                          <span className="span-2">Follow on Behance</span>
                         </a>
                       </li>
                     </ul>
@@ -690,7 +582,6 @@ const About = ({children}) => {
                   <link itemProp="url" href="https://warren-peterson-portfolio.com"/>
                   <link itemProp="keywords" href="web developer portfolio, web developer, portfolio, UI/UX specialist, react, react native, javascript"/>
                   <meta itemProp="genre" content="Web Developer Portfolio"/>
-                  <meta itemProp="award" content="https://thefwa.com/cases/web-components-are-awesome"/>
                   <meta itemProp="timeRequired" content="5 years"/>
                   <link itemProp="primaryImageOfPage" href="https://i.imgur.com/ELYBbMp.png"/>
                   <span itemProp="author" itemScope="" itemType="http://schema.org/Person">
