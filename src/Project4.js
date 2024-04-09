@@ -114,10 +114,13 @@ const Project4 = () => {
                                 <a target="_blank" className="hidden" href="https://github.com/WarrenGSlice/portfolio">Source Code</a>.
                             </small>
                             <AwesomeSlider  height="x58%" bullets="true" animation="openAnimation">
-                                <item source="https://i.imgur.com/k4qEEWb.png" style={{height:"97%", marginTop:"0.25%" }}></item>
-                                <item source="https://i.imgur.com/pvfw9Ia.png" style={{height:"98%", marginTop:"0.5%" }}></item>
-                                <item source="https://i.imgur.com/k4qEEWb.png" style={{height:"82%", marginTop:"5%" }}></item>
-                                <item source="https://i.imgur.com/pvfw9Ia.png" style={{height:"45%", marginTop:"15.5%" }}></item>
+                                <item source="https://i.imgur.com/wnMjtWD.png" style={{height:"100%", marginTop:"0%" }}></item>
+                                <item source="https://i.imgur.com/4pf6SIA.png" style={{height:"100%", marginTop:"0%" }}></item>
+                                <item source="https://i.imgur.com/0B2O3V0.png" style={{height:"100%", marginTop:"0%" }}></item>
+                                <item source="https://i.imgur.com/otkH9Bk.jpeg" style={{height:"100%", marginTop:"0%" }}></item>
+                                
+                                <item source="https://i.imgur.com/T6GiMlM.png" style={{height:"100%", marginTop:"0%" }}></item>
+
                             </AwesomeSlider>
                         </div>
                         <div className="text">
