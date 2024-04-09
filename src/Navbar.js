@@ -44,13 +44,12 @@ const NavBar = () => {
               Portfolio
             </span>
           </a>
-          <a title="tbd" href="/tbd">
-            <span>tbd</span>
-          </a>
           <a title="contact" href="/contact">
             <span>Contact</span>
           </a>
-          
+          <a title="projects" href="/project1">
+            <span>Player Projector App</span>
+          </a>
         </nav>
         <div id='burger' className={`burger hover ${isOpen ? '' : ''}`} onClick={toggleNavbar} >
           <i></i>
