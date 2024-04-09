@@ -566,11 +566,11 @@
                       }
                       .filters:before{
                         height:60%;
-                        background-color:#541365;
+                        background-color:#00ccffc6;
                         vertical-align:bottom;
                         transform:translate3d(100%,0,0)
                       }
-                      .filters:after{top:50%;height:60%;background-color:#200022;transform:translate3d(-100%,0,0)}
+                      .filters:after{top:50%;height:60%;background-color:#d000ffb0;transform:translate3d(-100%,0,0)}
                       .filters.status b{
                         opacity:1;
                         transform:translate3d(0,0,0);
@@ -600,7 +600,7 @@
                         margin-top:-20px;
                         font-size:20px;
                         letter-spacing:-1px;
-                        color:#00d5ff;
+                        color:#fbff01f1;
                         text-align:center;
                         z-index:9000;
                         font-style:normal;
