@@ -1,6 +1,7 @@
 
 import React, {useState, useEffect, useRef} from "react";
 import './About.css';
+import './stars.css';
 import { Link } from 'react-router-dom';
 import 'react-awesome-slider/dist/styles.css';
 import { m, LazyMotion, domAnimation } from "framer-motion";
