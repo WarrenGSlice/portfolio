@@ -385,8 +385,8 @@ const Portfolio = (props, {children}) => {
                                             <div className="main">
                                                 <picture className="back">
                                                     <img src='https://i.imgur.com/nAPvCPJ.png' type="image/png"/>
-                                                    <source srcSet={require('./images/player-projector1-small.png')} type="image/png"/>
-                                                    <img src={require('./images/player-projector1-small.png')} />
+                                                    {/*<source srcSet={require('./images/player-projector1-small.png')} type="image/png"/>
+                                                    <img src={require('./images/player-projector1-small.png')} />*/}
                                                 </picture>
                                                 <div className="tags">
                                                     <div>
@@ -412,8 +412,8 @@ const Portfolio = (props, {children}) => {
                                                 </div>
                                                 <picture id="imgs1" className="imgs">
                                                     <img src='https://i.imgur.com/O0GKN1r.png' type="image/png"/>
-                                                    <source srcSet={require('./images/player-projector2-small.jpeg')} type="image/jpeg"/>
-                                                    <img src={require('./images/player-projector2-small.jpeg')}/>
+                                                    {/*<source srcSet={require('./images/player-projector2-small.jpeg')} type="image/jpeg"/>
+                                                    <img src={require('./images/player-projector2-small.jpeg')}/>*/}
                                                 </picture>
                                             </div>
                                             {/*<em className="fresh">Recent</em>*/}
@@ -429,7 +429,7 @@ const Portfolio = (props, {children}) => {
                                                 <picture className="back">
                                                     <video className="video" preload="auto" autoPlay={true} loop={true} muted={true}>
                                                         <source src="https://i.imgur.com/jTd5DfD.mp4" type="video/mp4"/>
-                                                        <source srcSet={require('./images/small-cradle-fast.mp4')} type="video/mp4"/>
+                                                        {/*<source srcSet={require('./images/small-cradle-fast.mp4')} type="video/mp4"/>*/}
                                                     </video>
                                                 </picture>
                                                 <div className="tags">
@@ -452,8 +452,8 @@ const Portfolio = (props, {children}) => {
                                                 </div>
                                                 <picture id="imgs2" className="imgs">
                                                     <img src='https://i.imgur.com/tgmolVI.png' type="image/png"/>
-                                                    <source srcSet={require('./images/cradle-1-small.jpeg')} type="image/jpeg"/>
-                                                    <img src={require('./images/cradle-1-small.jpeg')}/>
+                                                    {/*<source srcSet={require('./images/cradle-1-small.jpeg')} type="image/jpeg"/>
+                                                    <img src={require('./images/cradle-1-small.jpeg')}/>*/}
                                                 </picture>
                                             </div>
                                             {/*<em className="github">Source on GitHub</em>*/}
@@ -469,7 +469,7 @@ const Portfolio = (props, {children}) => {
                                                 <picture className="back">
                                                     <video className="vidvid" preload="auto" autoPlay={true} loop={true} muted={true} >
                                                         <source src='https://i.imgur.com/gHFT8VH.mp4' type="video/mp4"/>
-                                                        <source src={require('./images/shoe-fly-fast.mp4')} type="video/mp4"/>
+                                                        {/*<source src={require('./images/shoe-fly-fast.mp4')} type="video/mp4"/>*/}
                                                     </video>
                                                 </picture>
                                                 <div className="tags">
@@ -496,7 +496,7 @@ const Portfolio = (props, {children}) => {
                                                 </div>
                                                 <picture id="imgs3" className="imgs">
                                                     <img src='https://i.imgur.com/h3IO6zf.png' type="image/png"/>
-                                                    <img src={require('./images/shoe-fly1-small.jpeg')}/>
+                                                    {/*<img src={require('./images/shoe-fly1-small.jpeg')}/>*/}
                                                 </picture>
                                             </div>
                                             {/*<em className="fwa">FWA award</em>*/}
@@ -511,7 +511,7 @@ const Portfolio = (props, {children}) => {
                                             <div className="main">
                                                 <picture className="back">
                                                     <img src='https://i.imgur.com/S0XscRj.png' type="image/png"/>
-                                                    <img src={require('./images/portfolio-1-small.png')}/>
+                                                   {/* <img src={require('./images/portfolio-1-small.png')}/>*/}
                                                 </picture>
                                                 <div className="tags">
                                                     <div>
@@ -534,7 +534,7 @@ const Portfolio = (props, {children}) => {
                                                 </div>
                                                 <picture id="imgs4" className="imgs">
                                                     <img src='https://i.imgur.com/51HHMip.png' type="image/png"/>
-                                                    <img src={require('./images/portfolio-2-small.png')}/>
+                                                    {/*<img src={require('./images/portfolio-2-small.png')}/>*/}
                                                 </picture>
                                             </div>
                                             {/*<em className="fwa">Cool WebApp</em>*/}
@@ -549,7 +549,7 @@ const Portfolio = (props, {children}) => {
                                             <div className="main">
                                                 <picture className="back">
                                                     <img src='https://i.imgur.com/Tlu0Dmi.png' type="image/png"/>
-                                                    <img src={require('./images/maze-solver1.png')}/>
+                                                    {/*<img src={require('./images/maze-solver1.png')}/>*/}
                                                 </picture>
                                                 <div className="tags">
                                                     <div>
@@ -565,8 +565,8 @@ const Portfolio = (props, {children}) => {
                                                 </div>
                                                 <picture id="imgs5" className="imgs">
                                                     <img src='https://i.imgur.com/ImHdUBs.png' type="image/png"/>
-                                                    <source srcSet="https://i.imgur.com/WCHMXjF.png" type="image/png"/>
-                                                    <img src={require('./images/maze-solver2.webp')}/>
+                                                    {/*<source srcSet="https://i.imgur.com/WCHMXjF.png" type="image/png"/>
+                                                    <img src={require('./images/maze-solver2.webp')}/>*/}
                                                 </picture>
                                             </div>
                                             {/*<em className="fwa mobile">FWA Award</em>*/}
@@ -581,7 +581,7 @@ const Portfolio = (props, {children}) => {
                                             <div className="main">
                                                     <picture className="back">
                                                         <img src='https://i.imgur.com/WMsM8xj.png' type="image/png"/>
-                                                        <img src={require('./images/tasty-bites1-small.png')}/>
+                                                        {/*<img src={require('./images/tasty-bites1-small.png')}/>*/}
                                                     </picture>
                                                 <div className="tags">
                                                     <div>
@@ -608,7 +608,7 @@ const Portfolio = (props, {children}) => {
                                                 </div>
                                                     <picture id="imgs6" className="imgs">
                                                         <img src='https://i.imgur.com/QADFIbB.png' type="image/png"/>
-                                                        <img src={require('./images/tasty-bites2-small.png')}/>
+                                                        {/*<img src={require('./images/tasty-bites2-small.png')}/>*/}
                                                     </picture>
                                             </div>
                                         </a>
@@ -623,7 +623,7 @@ const Portfolio = (props, {children}) => {
                                             <picture className="back">
                                                     <video className="video" preload='auto' autoPlay={true} loop={true} muted={true} style={{objectFit:"none", objectPosition:"-32px -25px", width:"118%"}}>
                                                         <source src='https://i.imgur.com/BNOT7hT.mp4' type="video/mp4"/>
-                                                        <source src={require('./images/minsweeper-trim.mp4')} type="video/mp4"/>
+                                                        {/*<source src={require('./images/minsweeper-trim.mp4')} type="video/mp4"/>*/}
                                                     </video>
                                                 </picture>
                                                 <div className="tags">
@@ -653,7 +653,7 @@ const Portfolio = (props, {children}) => {
                                                 </div>
                                                     <picture id="imgs7" className="imgs">
                                                         <img src='https://i.imgur.com/hnFKiqA.png' type="image/png"/>
-                                                        <img src={require('./images/minsweeper1-small.jpeg')}/>
+                                                        {/*<img src={require('./images/minsweeper1-small.jpeg')}/>*/}
                                                     </picture>
                                             </div>
                                         </a>
@@ -667,7 +667,7 @@ const Portfolio = (props, {children}) => {
                                             <div className="main">
                                                     <picture className="back">
                                                         <img src='https://i.imgur.com/ssfpFho.png' type="image/png"/>
-                                                        <img src={require('./images/blog1.png')}/>
+                                                        {/*<img src={require('./images/blog1.png')}/>*/}
                                                     </picture>
                                                 <div className="tags">
                                                     <div>
@@ -689,7 +689,7 @@ const Portfolio = (props, {children}) => {
                                                 </div>
                                                     <picture id="imgs8" className="imgs">
                                                         <img src='https://i.imgur.com/fCCS4hF.png' type="image/png"/>
-                                                        <img src={require('./images/blog2-small.png')}/>
+                                                        {/*<img src={require('./images/blog2-small.png')}/>*/}
                                                     </picture>
                                             </div>
                                         </a>
@@ -703,7 +703,7 @@ const Portfolio = (props, {children}) => {
                                             <div className="main">
                                                     <picture className="back">
                                                         <img src='https://i.imgur.com/N6rQPJz.png' type="image/png"/>
-                                                        <img src={require('./images/uno1-small.png')}/>
+                                                        {/*<img src={require('./images/uno1-small.png')}/>*/}
                                                     </picture>
                                                 <div className="tags">
                                                     <div>
@@ -720,7 +720,7 @@ const Portfolio = (props, {children}) => {
                                                 </div>
                                                     <picture id="imgs9" className="imgs">
                                                         <img src='https://i.imgur.com/Mceh1yJ.png' type="image/png"/>
-                                                        <img src={require('./images/uno2-small.png')}/>
+                                                        {/*<img src={require('./images/uno2-small.png')}/>*/}
                                                     </picture>
                                             </div>
                                         </a>
@@ -734,7 +734,7 @@ const Portfolio = (props, {children}) => {
                                             <div className="main">
                                                     <picture className="back">
                                                         <source src='https://i.imgur.com/pBc1NuF.png' type="image/png"/>
-                                                        <img src={require('./images/wack-a-mole1.png')}/>
+                                                        {/*<img src={require('./images/wack-a-mole1.png')}/>*/}
                                                     </picture>
                                                 <div className="tags">
                                                     <div>
@@ -752,7 +752,7 @@ const Portfolio = (props, {children}) => {
                                                 </div>
                                                     <picture id="imgs10" className="imgs">
                                                         <img src='https://i.imgur.com/HnQSVO1.png' type="image/png"/>
-                                                        <img src={require('./images/wack-a-mole2.png')}/>
+                                                        {/*<img src={require('./images/wack-a-mole2.png')}/>*/}
                                                     </picture>
                                             </div>
                                         </a>
