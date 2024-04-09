@@ -355,13 +355,12 @@ const Portfolio = (props, {children}) => {
 				                    <h3>From Web Components and UI/UX animations to React.JS, Angular.JS, Spring Boot, PHP, ASP.NET, and Node.JS. Check out my latest web software development portfolio projects.</h3>
 				                    <div className="filters hidden">
                                     <ul>
-                                        {['Show All', 'FRONT-END', 'BACK-END', 'FULL-STACK', 
+                                        {['Show All', 'FRONT-END', 'BACK-END', 
                                             'HTML5', 'REACTJS', 'EXPRESSJS', 'JAVASCRIPT', 
                                             'NODEJS', 'SPRING', '.NET', 'RESTAPI', 
                                             'CSS', 'POSTGRESQL', 'MYSQL', 'MSSQL', 
                                             'UI/UX DESIGN', 'ANIMATIONS', 'GAME DESIGN', 'AGILE', 
-                                            'JAVA', 'C#', 'C++', 'JQUERY', 
-                                            'PHP', 'TYPESCRIPT', 'ARTWORK']
+                                            'JAVA', 'C#', 'C++', 'PHP']
                                             .map((filter, index) => (
                                             <li 
                                                 key={index} 
