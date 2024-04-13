@@ -733,8 +733,8 @@ const Portfolio = (props, {children}) => {
                                             </div>
                                             <div className="main">
                                                     <picture className="back">
-                                                        <img src='https://i.imgur.com/pBc1NuF.png' type="image/png"/>
-                                                        {/*<img src={require('./images/wack-a-mole1.png')}/>*/}
+                                                        <img src='https://i.imgur.com/IDDYhsA.png' type="image/png"/>
+                                                        <img src={require('./images/wack-a-mole1.png')}/>
                                                     </picture>
                                                 <div className="tags">
                                                     <div>
