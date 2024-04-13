@@ -694,7 +694,7 @@ const Portfolio = (props, {children}) => {
                                             </div>
                                         </a>
                                     </li>
-                                    <li id="item9" className={`item  repo ${isHover ? '' : ''}`} onMouseOver={toggleHover9} onMouseLeave={handleMouseLeave9} data-hidden="true">
+                                    <li id="item9" className={`item  repo ${isHover ? '' : ''}`} onMouseOver={toggleHover9} onMouseLeave={handleMouseLeave9}>
                                         <a href="/project9" className="screen">
                                             <div className="bar">
                                                     <h2>UNO GAME </h2>
@@ -725,7 +725,7 @@ const Portfolio = (props, {children}) => {
                                             </div>
                                         </a>
                                     </li>
-                                    <li id="item10" className={`item  repo ${isHover ? '' : ''}`} onMouseOver={toggleHover10} onMouseLeave={handleMouseLeave10} data-hidden="true">
+                                    <li id="item10" className={`item  repo ${isHover ? '' : ''}`} onMouseOver={toggleHover10} onMouseLeave={handleMouseLeave10} >
                                         <a href="/project10" className="screen">
                                             <div className="bar">
                                                     <h2>Wack-A-Mole</h2>
@@ -733,7 +733,7 @@ const Portfolio = (props, {children}) => {
                                             </div>
                                             <div className="main">
                                                     <picture className="back">
-                                                        <source src='https://i.imgur.com/pBc1NuF.png' type="image/png"/>
+                                                        <img src='https://i.imgur.com/pBc1NuF.png' type="image/png"/>
                                                         {/*<img src={require('./images/wack-a-mole1.png')}/>*/}
                                                     </picture>
                                                 <div className="tags">
