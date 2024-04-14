@@ -85,8 +85,6 @@ const About = ({children}) => {
       laser.style.top = `${parseInt(laser.style.top) - 10}px`;
       // Check for collision with text elements
       checkCollision(laser);
-      //Log the values of win conditions for debugging
-      //console.log("won:", won, "winMessageShown:", winMessageShown, "gameOver:", gameOver);
       // Remove laser when it reaches the top of the screen
       if ((parseInt(laser.style.top) < 0 )|| won || winMessageShown || gameOver) {
         clearInterval(interval);
@@ -95,7 +93,6 @@ const About = ({children}) => {
         }
         // Remove the laser from the list of active lasers
         setActiveLasers((prevLasers) => prevLasers.filter((activeLaser) => activeLaser !== laser));
-  
       }
     }, 20);
   };
