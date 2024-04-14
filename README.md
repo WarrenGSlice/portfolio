@@ -77,19 +77,19 @@ _Below is an example of how you can instruct your audience on installing and set
  ## Usage
 
 To use the different features in the application start by viewing www.warren-peterson.com
-
+ #### Home Page
 ![alt text](https://i.imgur.com/lDvLB82l.png)
 ```
 On the Home page you can play the mini-game by pressing the red button
 ```
-
+  #### Portfolio
 ![alt text](https://i.imgur.com/tGC1J3vl.png)
 ```
 On the Portfolio page you can use the buttons on the top to sort projects by technology.
 You can also click on the projects to view more, 
 scroll to either the home page or contact form, or open the navbar
 ```
-
+  #### Projects
 ![alt text](https://i.imgur.com/O9WRZ6Vl.jpg)
 ```
 On a Project page you can scroll through the image by pressing the pink buttons
@@ -98,7 +98,7 @@ Scroll down to view more information about a project.
 The grey navigation arrows let you navigate from project to project. 
 The button on the upper left takes you back to the portfolio page.
 ```
-
+   #### Contact
 ![alt text](https://i.imgur.com/fjcExyil.png)
 ```
 The contact page is a multi-step form that lets you send an email to me.
