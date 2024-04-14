@@ -73,8 +73,8 @@ const Project1 = () => {
                                         </span>
                                     </a>
                                 </awesome-button>
-                                <awesome-button className="s_" title="Share it on Twitter" type="twitter" size="icon" via="warrengfoofight" text="Fantasy Football Rankings Editor | UI/UX Javascript Specialist | Warren Peterson" sharer="">
-                                    <a href="/elements/" className="aws-btn aws-btn--twitter aws-btn--visible">
+                                <awesome-button className="s_" title="Share it on X" type="twitter" size="icon" via="warrengfoofight" text="Fantasy Football Rankings Editor | UI/UX Javascript Specialist | Warren Peterson" sharer="">
+                                    <a href="https://twitter.com/home" className="aws-btn aws-btn--twitter aws-btn--visible">
                                         <span className="aws-btn__container">
                                             <span className="aws-btn__wrapper">
                                                 <span className="aws-btn__content" dataStatus="Success!" dataLoading="Wait for it ..">
@@ -90,7 +90,7 @@ const Project1 = () => {
                                     </a>
                                 </awesome-button>
                                 <awesome-button className="s_" title="Share it on Facebook" type="facebook" size="icon" sharer="">
-                                    <a href="/elements/" className="aws-btn aws-btn--facebook aws-btn--visible">
+                                    <a href="https://www.facebook.com/" className="aws-btn aws-btn--facebook aws-btn--visible">
                                         <span className="aws-btn__container">
                                             <span className="aws-btn__wrapper">
                                                 <span className="aws-btn__content" dataStatus="Success!" dataLoading="Wait for it ..">
