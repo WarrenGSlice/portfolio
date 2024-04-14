@@ -404,7 +404,7 @@ const Contact = ({children}) => {
                                         <h4>Let's get social</h4>
                                         <p>Follow my online fan page on Facebook and profiles on Twitter, GitHub and Linkedin.</p>
                                         <awesome-button width="130" type="facebook" target="_blank" href="https://www.facebook.com/warrenpeterson141414@gmail.com">
-                                            <a href="/elements/" className="aws-btn aws-btn--facebook aws-btn--visible">
+                                            <a href="https://www.facebook.com/warrenpeterson141414@gmail.com" className="aws-btn aws-btn--facebook aws-btn--visible">
                                                 <span className="aws-btn__container">
                                                     <span className="aws-btn__wrapper">
                                                         <span className="aws-btn__content" data-status="Success!" data-loading="Wait for it ..">
@@ -421,7 +421,7 @@ const Contact = ({children}) => {
                                             </a>
                                         </awesome-button>
                                         <awesome-button type="linkedin" width="130" target="_blank" href="https://www.linkedin.com/in/warrenpetersonbacs">
-                                            <a href="/elements/" className="aws-btn aws-btn--linkedin aws-btn--visible">
+                                            <a href="https://www.linkedin.com/in/warrenpetersonbacs" className="aws-btn aws-btn--linkedin aws-btn--visible">
                                                 <span className="aws-btn__container">
                                                     <span className="aws-btn__wrapper">
                                                         <span className="aws-btn__content" data-status="Success!" data-loading="Wait for it ..">
@@ -437,7 +437,7 @@ const Contact = ({children}) => {
                                             </a>
                                         </awesome-button>
                                         <awesome-button type="github" width="120" target="_blank" href="https://github.com/warrengslice">
-                                            <a href="/elements/" className="aws-btn aws-btn--github aws-btn--visible">
+                                            <a href="https://github.com/warrengslice" className="aws-btn aws-btn--github aws-btn--visible">
                                                 <span className="aws-btn__container">
                                                     <span className="aws-btn__wrapper">
                                                         <span className="aws-btn__content" data-status="Success!" data-loading="Wait for it ..">
