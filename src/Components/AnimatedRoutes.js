@@ -14,6 +14,7 @@ import Project9 from "../Project9";
 import Project10 from "../Project10";
 import Contact from "../Contact";
 import AboutMe from '../AboutMe';
+import Warren from '../Warren';
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -37,6 +38,7 @@ function AnimatedRoutes({}) {
             <Route exact path="/project10" element={<Project10 />}/>
             <Route exact path="/contact" element={<Contact />}/>
             <Route exact path="/aboutme" element={<AboutMe />}/>
+            <Route exact path="/warren" element={<Warren />}/>
         </Routes>
     </AnimatePresence>
   )

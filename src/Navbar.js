@@ -37,7 +37,7 @@ const NavBar = () => {
         <nav className="nav-links">
        
           <a title="about" href="/" className="active">
-            <span>About</span>
+            <span>Home</span>
           </a>
           <a title="web portfolio" href='/portfolio'>
             <span >
@@ -47,8 +47,8 @@ const NavBar = () => {
           <a title="contact" href="/contact">
             <span>Contact</span>
           </a>
-          <a title="projects" href="/project1">
-            <span>Player Projector App</span>
+          <a title="aboutme" href="/warren">
+            <span>About Me</span>
           </a>
         </nav>
         <div id='burger' className={`burger hover ${isOpen ? '' : ''}`} onClick={toggleNavbar} >
