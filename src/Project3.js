@@ -26,8 +26,8 @@ const Project3 = () => {
                     <i></i>
                     <span>Back</span>
                 </a>
-                <a href="/project4" className="next">
-                    <span>Portfolio WebApp</span>
+                <a href="/project5" className="next">
+                    <span>Maze Solver</span>
                     <em></em>
                 </a>
                 

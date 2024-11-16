@@ -7,7 +7,7 @@ import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 
 
-const Project1 = () => {
+const Project0 = () => {
     return (
 
 <main id="page-content" className="">
@@ -26,12 +26,12 @@ const Project1 = () => {
                     <i></i>
                     <span>Back</span>
                 </a>
-                <a href="/project2" className="next">
-                    <span>The Cradle of Existence</span>
+                <a href="/project0weatherapp" className="next">
+                    <span>Weather App</span>
                     <em></em>
                 </a>
                 
-                <a href="/project4" className="prev">
+                <a href="/portfolio" className="prev">
                     <span>Portfolio</span>
                     <em></em>
                 </a>
@@ -45,10 +45,10 @@ const Project1 = () => {
                     <div className="wrapper">
                         
                         <header>
-                            <h1 itemProp="name">Player Projector</h1>
-                            <h2 itemProp="description">Full Stack Fantasy Football Rankings Editor<br/> ReactJS Application uses REST API ExpressJS Micro Service Architecture</h2>
-                            <link itemProp="image" href="https://i.imgur.com/XmHZMkq.png"/>
-                            <meta itemProp="url" content="https://player-projector-front-end-ca53de46a866.herokuapp.com"/>
+                            <h1 itemProp="name">Software Engineer Intern - AI/ML</h1>
+                            <h2 itemProp="description"><strong>Product Manager Accelerator</strong> | Remote | Boston MA<br/> Full-Stack application that utilizes Generative AI to improve resumes.</h2>
+                            <link itemProp="image" href="https://i.imgur.com/RJdFOnW.png"/> {/*Main Image*/ }
+                            <meta itemProp="url" content="https://resume-builder-frontend-nine.vercel.app/"/>{/*Keep Hidden for now*/}
                             <span itemProp="author" itemScope="" itemType="http://schema.org/Person">
                                 <meta itemProp="name" content="Warren Peterson"/>
                                 <meta itemProp="address" content="USA"/>
@@ -56,8 +56,9 @@ const Project1 = () => {
                                 <meta itemProp="jobTitle" content="Full-Stack Web Developer, UI/UX Javascript"/>
                             </span>
                             <div className="share">
-                                <awesome-button  type="external" target="_blank" href="https://player-projector-front-end-ca53de46a866.herokuapp.com/" title="Visit the website">
-                                    <a href="https://player-projector-front-end-ca53de46a866.herokuapp.com/" className="aws-btn aws-btn--external aws-btn--orange aws-btn--visible">
+                                {/* Website Linkage, Twitter Share, Facebook Share currently unavailable due to NDA
+                                <awesome-button  type="external" target="_blank" href="https://resume-builder-frontend-nine.vercel.app/" title="Visit the website">
+                                    <a href="https://resume-builder-frontend-nine.vercel.app/" className="aws-btn aws-btn--external aws-btn--orange aws-btn--visible">
                                         <span className="aws-btn__container">
                                             <span className="aws-btn__wrapper">
                                                 <span className="aws-btn__content" dataStatus="Success!" dataLoading="Wait for it ..">
@@ -66,7 +67,7 @@ const Project1 = () => {
                                                             <path d="M36.999,36.998H13V13.089L19,13V7h-12v35.998h35.998V27.999h-6V36.998z M25,7l6,6l-9,9l6,6l8.999-9l6,6V7H25z" fill="#ffffff">
                                                             </path>
                                                         </svg> 
-                                                        <span>Visit the website</span>
+                                                        <span>Visit the website-coming soon</span>
                                                     </span>
                                                 </span>
                                             </span>
@@ -105,44 +106,57 @@ const Project1 = () => {
                                         </span>
                                     </a>
                                 </awesome-button>
+                                */}
                             </div>
                         </header>
                         <div className="media">
                             <div className="bar" data-src="">
                                 <i></i>
                             </div>
+                            {/* Source Code area left out due to NDA agreement, maybe put back in if project fails to complete
                             <small>
-                                <a target="_blank" className="hidden" href="https://github.com/WarrenGSlice/runningback">Source Code</a>.
+                                <a target="_blank" className="hidden" href="/project0"></a>.
                             </small>
+                            */}
                             <AwesomeSlider  height="x58%" bullets="true" animation="cubeAnimation">
-                                <item source="https://i.imgur.com/XmHZMkq.png"></item>
-                                <item source="https://i.imgur.com/KOXQOoO.jpeg"></item>
-                                <item source="https://i.imgur.com/gAzamU0.jpeg"></item>
-                                <item source="https://i.imgur.com/5rOfPb3.png"></item>
-                                <item source="https://i.imgur.com/YXmIsBv.jpeg"></item>           
+                                <item source="https://i.imgur.com/RJdFOnW.png"></item> 
+                                <item source="https://i.imgur.com/lWhdN9l.png"></item> 
+                                <item source="https://i.imgur.com/YNfkzlr.png"></item>     
                             </AwesomeSlider>
                         </div>
                         <div className="text">
                             <div className="section">
                                 <h2>About this project</h2>
                                 <hr/>
-                                <p>Project developed as a student at Grand Canyon University. </p>
-                                <p>Player Projector - The Fantasy Football Running Back Rankings table viewer and form editor is a <strong>react.js</strong> web application built on the <strong>node.js</strong> and <strong>express.js</strong> back-end.
+                                <p>Project developed as an <strong>Software Engineering Intern at PM Accelerator</strong></p>
+                                <p><strong>Generative AI Resume Improvement App</strong> - The <strong>AI/ML</strong> Resume Improvement app is a <strong>react.js</strong> web application built on the <strong>node.js</strong> and <strong>express.js</strong> back-end.
                                 </p>
-                                <p>At this project I was the solo UI/UX developer. The main challenge was to create a large database full of hard to fine fantasy football stats and then create an <strong>REST API</strong> structure that could
-                                     be used with the front-end or for other future applications. The API could be scaled out to include data for every position, every player, and for every year. Having this completed would create
-                                     an opportunity for monitization. There is a demand for fantasy football APIs that track hard to find player stats. 
+                                <p>
+                                    It also utilizes <strong>FastAPI</strong>, <strong>Celery</strong>, & <strong>Redis</strong> to form an asynchronous task queue for back-end request optimization.
                                 </p>
-                                <p>The UI of this application works best on desktop and contains easily sortable
-                                     data. To sort the data, simply click on the column you would like to have sorted.
+                                <p>
+                                    The objective of the web application is to suggest and make changes to an uploaded resume, specific to trends, phrases, keywords,
+                                     and relevance in the Product Manager Industry.
+                                </p>
+                                <p>
+                                    The chat component connects with <strong>ChatGPT OpenAI API</strong>, that allows for specific prompt engineering, and utilizes <strong>PDFJS</strong> to render changes in a visable and downloadable pdf format.
+                                </p>
+                                <p>Many integrations are included in this application such as <strong>Google OAuth2.0</strong> for storage security and as part of user management. This applications also includes several microservice back-end integrations.
+                                    These include the integration of a relational db, <strong>SQL</strong>, to handle saving and loading past finished resumes. A <strong>Pinecone</strong> vector database to handle embeddings, and also <strong>Colab</strong> as part of the transformational process.
+                                </p>
+                                <p>At this project I was the lead UI/UX developer as well as back-end engineer for the relational database application and structure along with engineer of many of the integrations. 
+                                    The main challenge was to create an application using Generative AI/ML to automate the process of improving a resume using <strong>ChatGPT</strong>. Rather than having to 
+                                     copy and paste your resume into ChatGPT and then try many prompts to get the desired result, Our application automates this process in a simple user friendly automated system.
+                                     The main idea in this internship was to quickly work together as a team to spin up a minimal viable product that could be demonstrated after a few months. If successful the opportunity 
+                                     to create a new start-up would be discussed depending on the marketability and success of the demonstration.
+                                </p>
+                                <p>I am currently still in progress with this internship and will be finished in Decemeber 2024.
                                 </p>
                                 <h3>Conclusion</h3>
-                                <p>This project was fun to make and there are plans to expand it. Future plans include creating a side-panel
-                                      where users can enter their sleeper league ID. Using that sleeper ID, it could use their custom points settings and re-calculate the
-                                        total fantasy points. This would allow users to view stats specific to their league settings.
+                                <p>This internship has been a wonderful experience that has helped me gain the confidence I needed to know that I can build anything our minds can think up.
+                                    There were so many challenges involved in this internship and I really enjoyed all the strategizing, trial & error, and problem solving.
                                 </p>
-                                <p> For now, these running back stats from 2023 will need to stand on their own as an example of
-                                        my ability to create APIs, sortable data, and create a large database.
+                                <p> Overall, this was a wonderful opportunity to work with a team of developers and gain some real work experience in a collaborative environment.
                                 </p>
                             </div>
                             <div className="section">
@@ -159,7 +173,21 @@ const Project1 = () => {
                                     <li>React Hooks & Props</li>
                                     <li>Javascript</li>
                                     <li>Typescript</li>
-                                    <li>Sorting Algo</li>
+                                    <li>Pinecone</li>
+                                    <li>Generative AI/ML</li>
+                                    <li>ChatGPT Open AI API</li>
+                                    <li>Python</li>
+                                    <li>FastAPI</li>
+                                    <li>OAuth2.0</li>
+                                    <li>MongoDB</li>
+                                    <li>Celery</li>
+                                    <li>Redis</li>
+                                    <li>Heroku</li>
+                                    <li>Vercel</li>
+                                    <li>Postman</li>
+                                    <li>Uvicorn</li>
+                                    <li>PDFJS</li>
+                                    <li>Google Colab</li>
                                     <li>Logs</li>
                                     <li>CSS3</li>
                                     <li>HTML5</li>
@@ -175,15 +203,15 @@ const Project1 = () => {
                             <div className="section">
                                 <h2>Resources</h2><hr/>
                                 <ul>
-                                    <br/><h4>If you would like to work on this project or make your own version:</h4><br/>
-                                    <li>Download the Front-End source code at 
+                                    <br/><h4>If you would like to learn more about this project:</h4><br/>
+                                    <li>The Front-End code is currently under copyright, please visit PM Accelerator for more information
                                         <span className="fancy">
-                                            <a target="_blank" title="Fantasy App Front-End" href="https://github.com/WarrenGSlice/runningback">https://www.github.com/warregnslice/runningback</a>
+                                            <a target="_blank" title="Resume App Front-End" href="https://www.pmaccelerator.io/">https://www.pmaccelerator.io/</a>
                                         </span>
                                     </li>
-                                    <li>Download the Back-End source code at 
+                                    <li>The Back-End code is currently under copyright, please visit PM Accelerator for more information
                                         <span className="fancy">
-                                            <a target="_blank" title="Fantasy App Back-End" href="https://github.com/WarrenGSlice/PlayerProjector">https://www.github.com/warregnslice/PlayerProjector</a>
+                                            <a target="_blank" title="Resume App Back-End" href="https://www.pmaccelerator.io/">https://www.pmaccelerator.io/</a>
                                         </span>
                                     </li>
                                 </ul>
@@ -197,7 +225,8 @@ const Project1 = () => {
                             </div>
                         </div>
                         <footer>
-                            <h4>Let's talk</h4>
+                            <h4>All Information about the Resume App and the internship is protected under copyright, PM Accelerator <strong>© Dr. Nancy Li International.</strong></h4><br/>
+                            <p>The information seen here may only be discussed and/or viewed for the purpose of future job opportunities.</p><br/>
                             <p>Wanna get in touch or talk about a project?<br/> Wanna use my API? <br/> Feel free to contact me via email at <span className="fancy"><a href="mailto:warrenpeterson141414@gmail.com">warrenpeterson141414@gmail.com</a></span><br/> or drop a line in the form at the <span className="fancy"><a href="/contact">contact page</a></span></p>
                         </footer>
                     </div>
@@ -216,4 +245,4 @@ const Project1 = () => {
 };
 
 
-export default Project1;
+export default Project0;

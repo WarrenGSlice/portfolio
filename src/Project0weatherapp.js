@@ -7,7 +7,7 @@ import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 
 
-const Project1 = () => {
+const Project0weatherapp = () => {
     return (
 
 <main id="page-content" className="">
@@ -26,13 +26,13 @@ const Project1 = () => {
                     <i></i>
                     <span>Back</span>
                 </a>
-                <a href="/project2" className="next">
-                    <span>The Cradle of Existence</span>
+                <a href="/project0wLeaguePage" className="next">
+                    <span>Custom Fantasy Football Page</span>
                     <em></em>
                 </a>
                 
-                <a href="/project4" className="prev">
-                    <span>Portfolio</span>
+                <a href="/project0" className="prev">
+                    <span>Software Engineer Intern</span>
                     <em></em>
                 </a>
                 <div className="ribbon">
@@ -45,10 +45,10 @@ const Project1 = () => {
                     <div className="wrapper">
                         
                         <header>
-                            <h1 itemProp="name">Player Projector</h1>
-                            <h2 itemProp="description">Full Stack Fantasy Football Rankings Editor<br/> ReactJS Application uses REST API ExpressJS Micro Service Architecture</h2>
-                            <link itemProp="image" href="https://i.imgur.com/XmHZMkq.png"/>
-                            <meta itemProp="url" content="https://player-projector-front-end-ca53de46a866.herokuapp.com"/>
+                            <h1 itemProp="name">Weather App</h1>
+                            <h2 itemProp="description">Quick weather updates<br/> Simple React App that gives weather updates</h2>
+                            <link itemProp="image" href="https://i.imgur.com/ydFhJwJ.jpeg"/> {/*Main Image*/ }
+                            <meta itemProp="url" content="https://weatherapppm-09f3cd6538fb.herokuapp.com/"/>{/*Keep Hidden for now*/}
                             <span itemProp="author" itemScope="" itemType="http://schema.org/Person">
                                 <meta itemProp="name" content="Warren Peterson"/>
                                 <meta itemProp="address" content="USA"/>
@@ -56,8 +56,8 @@ const Project1 = () => {
                                 <meta itemProp="jobTitle" content="Full-Stack Web Developer, UI/UX Javascript"/>
                             </span>
                             <div className="share">
-                                <awesome-button  type="external" target="_blank" href="https://player-projector-front-end-ca53de46a866.herokuapp.com/" title="Visit the website">
-                                    <a href="https://player-projector-front-end-ca53de46a866.herokuapp.com/" className="aws-btn aws-btn--external aws-btn--orange aws-btn--visible">
+                                <awesome-button  type="external" target="_blank" href="https://weatherapppm-09f3cd6538fb.herokuapp.com/" title="Visit website">
+                                    <a href="https://weatherapppm-09f3cd6538fb.herokuapp.com/" className="aws-btn aws-btn--external aws-btn--orange aws-btn--visible">
                                         <span className="aws-btn__container">
                                             <span className="aws-btn__wrapper">
                                                 <span className="aws-btn__content" dataStatus="Success!" dataLoading="Wait for it ..">
@@ -66,14 +66,14 @@ const Project1 = () => {
                                                             <path d="M36.999,36.998H13V13.089L19,13V7h-12v35.998h35.998V27.999h-6V36.998z M25,7l6,6l-9,9l6,6l8.999-9l6,6V7H25z" fill="#ffffff">
                                                             </path>
                                                         </svg> 
-                                                        <span>Visit the website</span>
+                                                        <span> Visit website</span>
                                                     </span>
                                                 </span>
                                             </span>
                                         </span>
                                     </a>
                                 </awesome-button>
-                                <awesome-button className="s_" title="Share it on X" type="twitter" size="icon" via="warrengfoofight" text="Fantasy Football Rankings Editor | UI/UX Javascript Specialist | Warren Peterson" sharer="">
+                                <awesome-button className="s_" title="Share it on X" type="twitter" size="icon" via="warrengfoofight" text="Weather App | UI/UX Javascript Specialist | Warren Peterson" sharer="">
                                     <a href="https://twitter.com/home" className="aws-btn aws-btn--twitter aws-btn--visible">
                                         <span className="aws-btn__container">
                                             <span className="aws-btn__wrapper">
@@ -112,37 +112,36 @@ const Project1 = () => {
                                 <i></i>
                             </div>
                             <small>
-                                <a target="_blank" className="hidden" href="https://github.com/WarrenGSlice/runningback">Source Code</a>.
+                                <a target="_blank" className="hidden" href="https://www.GitHub.com/WarrenGSlice/WeatherApp">Source Code</a>.
                             </small>
                             <AwesomeSlider  height="x58%" bullets="true" animation="cubeAnimation">
-                                <item source="https://i.imgur.com/XmHZMkq.png"></item>
-                                <item source="https://i.imgur.com/KOXQOoO.jpeg"></item>
-                                <item source="https://i.imgur.com/gAzamU0.jpeg"></item>
-                                <item source="https://i.imgur.com/5rOfPb3.png"></item>
-                                <item source="https://i.imgur.com/YXmIsBv.jpeg"></item>           
+                                <item>
+                                    <video style={{width:'101.5%', marginRight:'175px'}} preload="auto" autoPlay={true} loop={true} muted={true}>
+                                        <source src="https://i.imgur.com/JYmy5wu.mp4" type="video/mp4"/>
+                                        {/*<source srcSet={require('./images/small-cradle-fast.mp4')} type="video/mp4"/>*/}
+                                    </video>
+                                </item> 
+                                <item source="https://i.imgur.com/ydFhJwJ.jpeg"></item> 
                             </AwesomeSlider>
                         </div>
                         <div className="text">
                             <div className="section">
                                 <h2>About this project</h2>
                                 <hr/>
-                                <p>Project developed as a student at Grand Canyon University. </p>
-                                <p>Player Projector - The Fantasy Football Running Back Rankings table viewer and form editor is a <strong>react.js</strong> web application built on the <strong>node.js</strong> and <strong>express.js</strong> back-end.
+                                <p>Project developed as part of the interview process to become a <strong>Software Engineering Intern at PM Accelerator</strong></p>
+                                <p><strong>Weather App</strong> - The <strong>REACTJS</strong> weather application built with <strong>node.js</strong>.
                                 </p>
-                                <p>At this project I was the solo UI/UX developer. The main challenge was to create a large database full of hard to fine fantasy football stats and then create an <strong>REST API</strong> structure that could
-                                     be used with the front-end or for other future applications. The API could be scaled out to include data for every position, every player, and for every year. Having this completed would create
-                                     an opportunity for monitization. There is a demand for fantasy football APIs that track hard to find player stats. 
+                                <p>
+                                    The objective of the weather app was to quickly create a weather checking website in one day that could tell the real-time weather of a location and let the user check the weather of other locations.
                                 </p>
-                                <p>The UI of this application works best on desktop and contains easily sortable
-                                     data. To sort the data, simply click on the column you would like to have sorted.
+                                <p>This application integrates the API from <strong>OPENWEATHERMAP API</strong> to give the user real-time weather updates. This applications also includes other information such as sunrise, sunset, humidity, visibility, & wind speed.
+                                </p>
+                                <p>For this project I was the lead UI/UX developer as well as back-end engineer. It was created as part of the third round of interviews for an internship at PM Accelerator and succeeded in it's purpose. 
                                 </p>
                                 <h3>Conclusion</h3>
-                                <p>This project was fun to make and there are plans to expand it. Future plans include creating a side-panel
-                                      where users can enter their sleeper league ID. Using that sleeper ID, it could use their custom points settings and re-calculate the
-                                        total fantasy points. This would allow users to view stats specific to their league settings.
+                                <p>The Weather App was a fun quick lesson in how to integrate a free API into a useful web application.
                                 </p>
-                                <p> For now, these running back stats from 2023 will need to stand on their own as an example of
-                                        my ability to create APIs, sortable data, and create a large database.
+                                <p> Overall, it was a simple, fun, and quick project that was an enjoyable opportunity to continue working on my skills as a developer.
                                 </p>
                             </div>
                             <div className="section">
@@ -151,39 +150,23 @@ const Project1 = () => {
                                 <ul itemProp="keywords">
                                     <li>UI/UX Architecture</li>
                                     <li>React.js</li>
-                                    <li>Express.js</li>
                                     <li>Node.js</li>
-                                    <li>Ajax</li>
-                                    <li>Async & Await</li>
                                     <li>Axios</li>
-                                    <li>React Hooks & Props</li>
                                     <li>Javascript</li>
-                                    <li>Typescript</li>
-                                    <li>Sorting Algo</li>
-                                    <li>Logs</li>
+                                    <li>OpenWeatherMap API</li>
+                                    <li>Heroku</li>
                                     <li>CSS3</li>
                                     <li>HTML5</li>
-                                    <li>MySql</li>
-                                    <li>CRUD</li>
-                                    <li>REST API</li>
-                                    <li>CI/CD & Autodeployment</li>
-                                    <li>Microservices</li>
-                                    <li>Agile Methodolgy</li>
-                                    <li>Full-Stack -- Front-End / Back-End</li>
+                                    <li>Front-End</li>
                                 </ul>
                             </div>
                             <div className="section">
                                 <h2>Resources</h2><hr/>
                                 <ul>
                                     <br/><h4>If you would like to work on this project or make your own version:</h4><br/>
-                                    <li>Download the Front-End source code at 
+                                    <li>Download the source code at 
                                         <span className="fancy">
-                                            <a target="_blank" title="Fantasy App Front-End" href="https://github.com/WarrenGSlice/runningback">https://www.github.com/warregnslice/runningback</a>
-                                        </span>
-                                    </li>
-                                    <li>Download the Back-End source code at 
-                                        <span className="fancy">
-                                            <a target="_blank" title="Fantasy App Back-End" href="https://github.com/WarrenGSlice/PlayerProjector">https://www.github.com/warregnslice/PlayerProjector</a>
+                                            <a target="_blank" title="Weather App" href="https://github.com/WarrenGSlice/weatherapp">https://www.github.com/warregnslice/weatherapp</a>
                                         </span>
                                     </li>
                                 </ul>
@@ -216,4 +199,4 @@ const Project1 = () => {
 };
 
 
-export default Project1;
+export default Project0weatherapp;

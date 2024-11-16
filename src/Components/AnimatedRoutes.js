@@ -15,6 +15,9 @@ import Project10 from "../Project10";
 import Contact from "../Contact";
 import AboutMe from '../AboutMe';
 import Warren from '../Warren';
+import Project0 from '../Project0';
+import Project0weatherapp from '../Project0weatherapp';
+import Project0wLeaguePage from '../Project0wLeaguePage';
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -26,6 +29,9 @@ function AnimatedRoutes({}) {
           
             <Route exact path="/" element={<About />}/>
             <Route exact path="/portfolio" element={<Portfolio />}/>
+            <Route exact path='/project0' element={<Project0 />}/>
+            <Route exact path='project0weatherapp' element={<Project0weatherapp/>}/>
+            <Route exact path='project0wLeaguePage' element={<Project0wLeaguePage/>}/>
             <Route exact path="/project1" element={<Project1 />}/>
             <Route exact path="/project2" element={<Project2 />}/>
             <Route exact path="/project3" element={<Project3 />}/>

@@ -7,7 +7,7 @@ import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 
 
-const Project1 = () => {
+const Project0wLeaguePage = () => {
     return (
 
 <main id="page-content" className="">
@@ -26,13 +26,13 @@ const Project1 = () => {
                     <i></i>
                     <span>Back</span>
                 </a>
-                <a href="/project2" className="next">
-                    <span>The Cradle of Existence</span>
+                <a href="/project4" className="next">
+                    <span>Portfolio</span>
                     <em></em>
                 </a>
                 
-                <a href="/project4" className="prev">
-                    <span>Portfolio</span>
+                <a href="/project0weatherapp" className="prev">
+                    <span>Weather App</span>
                     <em></em>
                 </a>
                 <div className="ribbon">
@@ -45,10 +45,10 @@ const Project1 = () => {
                     <div className="wrapper">
                         
                         <header>
-                            <h1 itemProp="name">Player Projector</h1>
-                            <h2 itemProp="description">Full Stack Fantasy Football Rankings Editor<br/> ReactJS Application uses REST API ExpressJS Micro Service Architecture</h2>
-                            <link itemProp="image" href="https://i.imgur.com/XmHZMkq.png"/>
-                            <meta itemProp="url" content="https://player-projector-front-end-ca53de46a866.herokuapp.com"/>
+                            <h1 itemProp="name">Custom Fantasy Football League Page</h1>
+                            <h2 itemProp="description">Svelte SCSS Custom Fantasy Football League Page<br/> Implements Sleeper API to show league info in a custom interface</h2>
+                            <link itemProp="image" href="https://i.imgur.com/ydFhJwJ.jpeg"/> {/*Main Image*/ }
+                            <meta itemProp="url" content="https://weatherapppm-09f3cd6538fb.herokuapp.com/"/>{/*Keep Hidden for now*/}
                             <span itemProp="author" itemScope="" itemType="http://schema.org/Person">
                                 <meta itemProp="name" content="Warren Peterson"/>
                                 <meta itemProp="address" content="USA"/>
@@ -56,8 +56,8 @@ const Project1 = () => {
                                 <meta itemProp="jobTitle" content="Full-Stack Web Developer, UI/UX Javascript"/>
                             </span>
                             <div className="share">
-                                <awesome-button  type="external" target="_blank" href="https://player-projector-front-end-ca53de46a866.herokuapp.com/" title="Visit the website">
-                                    <a href="https://player-projector-front-end-ca53de46a866.herokuapp.com/" className="aws-btn aws-btn--external aws-btn--orange aws-btn--visible">
+                                <awesome-button  type="external" target="_blank" href="https://league-page-iota-five.vercel.app/" title="Visit website">
+                                    <a href="https://league-page-iota-five.vercel.app/" className="aws-btn aws-btn--external aws-btn--orange aws-btn--visible">
                                         <span className="aws-btn__container">
                                             <span className="aws-btn__wrapper">
                                                 <span className="aws-btn__content" dataStatus="Success!" dataLoading="Wait for it ..">
@@ -66,14 +66,14 @@ const Project1 = () => {
                                                             <path d="M36.999,36.998H13V13.089L19,13V7h-12v35.998h35.998V27.999h-6V36.998z M25,7l6,6l-9,9l6,6l8.999-9l6,6V7H25z" fill="#ffffff">
                                                             </path>
                                                         </svg> 
-                                                        <span>Visit the website</span>
+                                                        <span> Visit website</span>
                                                     </span>
                                                 </span>
                                             </span>
                                         </span>
                                     </a>
                                 </awesome-button>
-                                <awesome-button className="s_" title="Share it on X" type="twitter" size="icon" via="warrengfoofight" text="Fantasy Football Rankings Editor | UI/UX Javascript Specialist | Warren Peterson" sharer="">
+                                <awesome-button className="s_" title="Share it on X" type="twitter" size="icon" via="warrengfoofight" text="Custom Fantasy Football League Page | UI/UX Javascript Specialist | Warren Peterson" sharer="">
                                     <a href="https://twitter.com/home" className="aws-btn aws-btn--twitter aws-btn--visible">
                                         <span className="aws-btn__container">
                                             <span className="aws-btn__wrapper">
@@ -112,37 +112,37 @@ const Project1 = () => {
                                 <i></i>
                             </div>
                             <small>
-                                <a target="_blank" className="hidden" href="https://github.com/WarrenGSlice/runningback">Source Code</a>.
+                                <a target="_blank" className="hidden" href="https://github.com/WarrenGSlice/league-page">Source Code</a>.
                             </small>
                             <AwesomeSlider  height="x58%" bullets="true" animation="cubeAnimation">
-                                <item source="https://i.imgur.com/XmHZMkq.png"></item>
-                                <item source="https://i.imgur.com/KOXQOoO.jpeg"></item>
-                                <item source="https://i.imgur.com/gAzamU0.jpeg"></item>
-                                <item source="https://i.imgur.com/5rOfPb3.png"></item>
-                                <item source="https://i.imgur.com/YXmIsBv.jpeg"></item>           
+                                <item source="https://i.imgur.com/6O0sRnw.png"></item> 
+                                <item>
+                                    <video style={{width:'101.5%', marginRight:'175px'}} preload="auto" autoPlay={true} loop={true} muted={true}>
+                                        <source src="https://i.imgur.com/SNN0l01.mp4" type="video/mp4"/>
+                                        {/*<source srcSet={require('./images/small-cradle-fast.mp4')} type="video/mp4"/>*/}
+                                    </video>
+                                </item> 
                             </AwesomeSlider>
                         </div>
                         <div className="text">
                             <div className="section">
                                 <h2>About this project</h2>
                                 <hr/>
-                                <p>Project developed as a student at Grand Canyon University. </p>
-                                <p>Player Projector - The Fantasy Football Running Back Rankings table viewer and form editor is a <strong>react.js</strong> web application built on the <strong>node.js</strong> and <strong>express.js</strong> back-end.
+                                <p>Project developed as a fun idea for my long standing Fantasy Football League</p>
+                                <p><strong>Custom Fantasy Football League Page</strong> - The <strong>Svelte</strong> fantasy football application built with <strong>react.js</strong>.
                                 </p>
-                                <p>At this project I was the solo UI/UX developer. The main challenge was to create a large database full of hard to fine fantasy football stats and then create an <strong>REST API</strong> structure that could
-                                     be used with the front-end or for other future applications. The API could be scaled out to include data for every position, every player, and for every year. Having this completed would create
-                                     an opportunity for monitization. There is a demand for fantasy football APIs that track hard to find player stats. 
+                                <p>
+                                    The objective of the custom fantasy football app was to quickly create a custom league page that allows the managers in the league to view and interact with all kinds of data from our Sleeper league.
                                 </p>
-                                <p>The UI of this application works best on desktop and contains easily sortable
-                                     data. To sort the data, simply click on the column you would like to have sorted.
+                                <p>This application integrates the API from <strong>Sleeper API</strong> to give the user all sorts of analytical information. This league page was initially developed by Nicholas Melhado and was customized for our specific league.
+                                </p>
+                                <p>This Project started as a personal project and was then opened up as an open source project that now allows other developers to customize it for their own league.
                                 </p>
                                 <h3>Conclusion</h3>
-                                <p>This project was fun to make and there are plans to expand it. Future plans include creating a side-panel
-                                      where users can enter their sleeper league ID. Using that sleeper ID, it could use their custom points settings and re-calculate the
-                                        total fantasy points. This would allow users to view stats specific to their league settings.
+                                <p>Although I did not create the main code base for this application, I do understand it and made changes in order to make it work for my league. The other managers in my league really enjoy it because it is much more user friendly than sleeper, 
+                                    and makes it much easier to find the information you are looking for without having to switch between the sleeper desktop and sleeper mobile app to find the information. This web app displays all the information perfectly in both mobile and desktop.
                                 </p>
-                                <p> For now, these running back stats from 2023 will need to stand on their own as an example of
-                                        my ability to create APIs, sortable data, and create a large database.
+                                <p> Overall, it was a simple, fun, and quick project that was an makes the fantasy football experience even more enjoyable.
                                 </p>
                             </div>
                             <div className="section">
@@ -151,39 +151,24 @@ const Project1 = () => {
                                 <ul itemProp="keywords">
                                     <li>UI/UX Architecture</li>
                                     <li>React.js</li>
-                                    <li>Express.js</li>
                                     <li>Node.js</li>
-                                    <li>Ajax</li>
-                                    <li>Async & Await</li>
-                                    <li>Axios</li>
-                                    <li>React Hooks & Props</li>
+                                    <li>Svelte</li>
                                     <li>Javascript</li>
-                                    <li>Typescript</li>
-                                    <li>Sorting Algo</li>
-                                    <li>Logs</li>
-                                    <li>CSS3</li>
+                                    <li>Sleeper API</li>
+                                    <li>Heroku</li>
+                                    <li>SCSS</li>
                                     <li>HTML5</li>
-                                    <li>MySql</li>
-                                    <li>CRUD</li>
-                                    <li>REST API</li>
-                                    <li>CI/CD & Autodeployment</li>
-                                    <li>Microservices</li>
-                                    <li>Agile Methodolgy</li>
-                                    <li>Full-Stack -- Front-End / Back-End</li>
+                                    <li>Front-End</li>
+                                    <li>Responsive Web Design</li>
                                 </ul>
                             </div>
                             <div className="section">
                                 <h2>Resources</h2><hr/>
                                 <ul>
                                     <br/><h4>If you would like to work on this project or make your own version:</h4><br/>
-                                    <li>Download the Front-End source code at 
+                                    <li>Download the source code at 
                                         <span className="fancy">
-                                            <a target="_blank" title="Fantasy App Front-End" href="https://github.com/WarrenGSlice/runningback">https://www.github.com/warregnslice/runningback</a>
-                                        </span>
-                                    </li>
-                                    <li>Download the Back-End source code at 
-                                        <span className="fancy">
-                                            <a target="_blank" title="Fantasy App Back-End" href="https://github.com/WarrenGSlice/PlayerProjector">https://www.github.com/warregnslice/PlayerProjector</a>
+                                            <a target="_blank" title="League Page" href="https://github.com/WarrenGSlice/league-page">https://github.com/WarrenGSlice/league-page</a>
                                         </span>
                                     </li>
                                 </ul>
@@ -216,4 +201,4 @@ const Project1 = () => {
 };
 
 
-export default Project1;
+export default Project0wLeaguePage;

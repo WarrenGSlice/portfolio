@@ -422,7 +422,15 @@
                       transform: rotate(-45deg) translate(5px, -5px);
                     }
                     */
-                    .burger{position:fixed;right:83px;top:35px;z-index:9998;cursor:pointer;padding:5px 4px;background-color:transparent}
+                    .burger{
+                      position:fixed;
+                      right:83px;
+                      top:35px;
+                      z-index:9998;
+                      cursor:pointer;
+                      padding:5px 4px;
+                      background-color:transparent;
+                    }
                     .burger.white i{background-color:#fff}
                     .burger:active,#page-header .burger:focus{outline-color:0;outline-style:none;outline-width:0}
                     .burger i{display:block;width:42px;height:2px;margin:8px;background-color:#7a7a7a}

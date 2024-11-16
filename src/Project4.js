@@ -26,13 +26,13 @@ const Project4 = () => {
                     <i></i>
                     <span>Back</span>
                 </a>
-                <a href="/project5" className="next">
-                    <span>Maze Solver</span>
+                <a href="/project1" className="next">
+                    <span>Player Projector</span>
                     <em></em>
                 </a>
                 
-                <a href="/project3" className="prev">
-                    <span>Shoe Fly</span>
+                <a href="/project0wLeaguePage" className="prev">
+                    <span>Custom Fantasy Football Page</span>
                     <em></em>
                 </a>
                 <div className="ribbon">

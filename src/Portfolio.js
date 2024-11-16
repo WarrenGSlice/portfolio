@@ -10,6 +10,59 @@ const Portfolio = (props, {children}) => {
     const [selectedFilter, setSelectedFilter] = useState('Show All'); // State variable to keep track of selected filter
     const [isTransitioning, setIsTransitioning] = useState(false);
 
+    const toggleHover0 = () => {
+        setHover(!isHover);
+      // Start the second animation after a delay when opening
+      if (!isHover) {
+        document.getElementById('item0').classList.add('hover');
+        document.getElementById('screen').classList.add('active');
+        // Switch images by toggling classes
+        document.querySelector('.back').classList.remove('active');
+        document.querySelector('#imgs0').classList.add('active');
+        const timeoutId = setTimeout(() => {
+          document.getElementById('item0').classList.add('ready');
+        }, 400); // Add a delay to match the duration of the first animation
+        return () => clearTimeout(timeoutId);
+      }  
+    };
+
+    const handleMouseLeave0 = () => {
+        setHover(isHover);
+        // If not hovered, switch back to the original image
+        //document.querySelector('.imgs').classList.remove('active');
+        //document.querySelector('.back').classList.add('active');
+        document.getElementById('item0').classList.remove('hover');
+        document.getElementById('item0').classList.remove('ready');
+        document.getElementById('screen').classList.remove('active');
+        document.getElementById("imgs0").classList.remove('active');      
+    };
+
+    const toggleHover01 = () => {
+        setHover(!isHover);
+      // Start the second animation after a delay when opening
+      if (!isHover) {
+        document.getElementById('item01').classList.add('hover');
+        document.getElementById('screen').classList.add('active');
+        // Switch images by toggling classes
+        document.querySelector('.back').classList.remove('active');
+        document.querySelector('#imgs01').classList.add('active');
+        const timeoutId = setTimeout(() => {
+          document.getElementById('item01').classList.add('ready');
+        }, 400); // Add a delay to match the duration of the first animation
+        return () => clearTimeout(timeoutId);
+      }  
+    };
+
+    const handleMouseLeave01 = () => {
+        setHover(isHover);
+        // If not hovered, switch back to the original image
+        //document.querySelector('.imgs').classList.remove('active');
+        //document.querySelector('.back').classList.add('active');
+        document.getElementById('item01').classList.remove('hover');
+        document.getElementById('item01').classList.remove('ready');
+        document.getElementById('screen').classList.remove('active');
+        document.getElementById("imgs01").classList.remove('active');      
+    };
 
     const toggleHover = () => {
         setHover(!isHover);
@@ -376,6 +429,164 @@ const Portfolio = (props, {children}) => {
                                     </div>
 			                </header>
                             <ul className="grid-list cf_" >
+                                    <li id="item0" className={`item  repo ${isHover ? '' : ''}`} onMouseOver={toggleHover0} onMouseLeave={handleMouseLeave0}>
+                                        <a id="screen" href="/project0" className="screen">
+                                            <div className="bar">
+                                                    <h2>Software Engineer Intern - PM Accelerator </h2>
+                                                <i></i>
+                                            </div>
+                                            <div className="main">
+                                                <picture className="back">
+                                                    <img src='https://i.imgur.com/RJdFOnW.png' type="image/png"/>
+                                                    {/*<source srcSet={require('./images/player-projector1-small.png')} type="image/png"/>
+                                                    <img src={require('./images/player-projector1-small.png')} />*/}
+                                                </picture>
+                                                <div className="tags">
+                                                    <div>
+                                                        <ul>
+                                                            <li>PYTHON</li>
+                                                            <li>PINECONE</li>    
+                                                            <li>VECTORDB</li>
+                                                            <li>GENERATIVEAI</li>
+                                                            <li>REACTJS</li>
+                                                            <li>EXPRESSJS</li>
+                                                            <li className="hidden">NODEJS</li>
+                                                            <li className="hidden">AGILE</li>
+                                                            <li className="hidden">RESTAPI</li>
+                                                            <li className="hidden">JAVASCRIPT</li>
+                                                            <li className="hidden">TYPESCRIPT</li>
+                                                            <li className="hidden">MYSQL</li>
+                                                            <li className="hidden">FRONT-END</li>
+                                                            <li className="hidden">BACK-END</li>
+                                                            <li className="hidden">FULL-STACK</li>
+                                                            <li className="hidden">UI/UX DESIGN</li>
+                                                            <li className="hidden">WEBAPP</li>
+                                                            <li className="hidden">CSS</li>
+                                                            <li className="hidden">HTML5</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <picture id="imgs0" className="imgs">
+                                                    <img src='https://i.imgur.com/YNfkzlr.png' type="image/png"/>
+                                                    {/*<source srcSet={require('./images/player-projector2-small.jpeg')} type="image/jpeg"/>
+                                                    <img src={require('./images/player-projector2-small.jpeg')}/>*/}
+                                                </picture>
+                                            </div>
+                                            <em className="fresh">Recent</em>
+                                        </a>
+                                    </li>
+                                    <li id="item01" className={`item  repo ${isHover ? '' : ''}`} onMouseOver={toggleHover01} onMouseLeave={handleMouseLeave01}>
+                                        <a id="screen" href="/project0weatherapp" className="screen">
+                                            <div className="bar">
+                                                    <h2>Weather App</h2>
+                                                <i></i>
+                                            </div>
+                                            <div className="main">
+                                                <picture className="back">
+                                                <video className="video" preload="auto" autoPlay={true} loop={true} muted={true}>
+                                                        <source src="https://i.imgur.com/JYmy5wu.mp4" type="video/mp4"/>
+                                                        {/*<source srcSet={require('./images/small-cradle-fast.mp4')} type="video/mp4"/>*/}
+                                                </video>
+                                                </picture>
+                                                <div className="tags">
+                                                    <div>
+                                                        <ul>
+                                                            <li>WEBAPP</li>
+                                                            <li>REACTJS</li>    
+                                                            <li>JAVASCRIPT</li>
+                                                            <li>HTMLS</li>
+                                                            <li>OPENWEATHERMAP</li>
+                                                            <li>CSS</li>
+                                                            <li className="hidden">NODEJS</li>
+                                                            <li className="hidden">FRONT-END</li>
+                                                            <li className="hidden">UI/UX DESIGN</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <picture id="imgs01" className="imgs">
+                                                    <img src='https://i.imgur.com/ydFhJwJ.jpeg' type="image/png"/>
+                                                    {/*<source srcSet={require('./images/player-projector2-small.jpeg')} type="image/jpeg"/>
+                                                    <img src={require('./images/player-projector2-small.jpeg')}/>*/}
+                                                </picture>
+                                            </div>
+                                            {/*<em className="fresh">Recent</em>*/}
+                                        </a>
+                                    </li>
+                                    {/** Currently using item10 for this as the toggleHover and handleMouseLeave are already set up**/}
+                                    <li id="item10" className={`item  repo ${isHover ? '' : ''}`} onMouseOver={toggleHover10} onMouseLeave={handleMouseLeave10}>
+                                        <a id="screen" href="/project0wLeaguePage" className="screen">
+                                            <div className="bar">
+                                                    <h2>Fanasty Football Custom League Page</h2>
+                                                <i></i>
+                                            </div>
+                                            <div className="main">
+                                                <picture className="back">
+                                                    <img src='https://i.imgur.com/6O0sRnw.png' type="image/png"/>
+                                                </picture>
+                                                <div className="tags">
+                                                    <div>
+                                                        <ul>
+                                                            <li>RESPONSIVE</li>
+                                                            <li>REACTJS</li>    
+                                                            <li>JAVASCRIPT</li>
+                                                            <li>HTMLS</li>
+                                                            <li>SVELTE</li>
+                                                            <li>SCSS</li>
+                                                            <li className="hidden">NODEJS</li>
+                                                            <li className="hidden">FRONT-END</li>
+                                                            <li className="hidden">UI/UX DESIGN</li>
+                                                            <li className="hidden">DOCKER</li>
+                                                            <li className="hidden">VERCEL</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <picture id="imgs10" className="imgs">
+                                                    <img src='https://i.imgur.com/6O0sRnw.png' type="image/png"/>
+                                                </picture>
+                                            </div>
+                                            {/*<em className="fresh">Recent</em>*/}
+                                        </a>
+                                    </li>
+                                    <li id="item4" className={`item  repo ${isHover ? '' : ''}`} onMouseOver={toggleHover4} onMouseLeave={handleMouseLeave4}>
+                                        <a href="/project4" className="screen">
+                                            <div className="bar">
+                                                <h2>Portfolio Web Application </h2>
+                                                <i></i>
+                                            </div>
+                                            <div className="main">
+                                                <picture className="back">
+                                                    <video style={{height:'125%',paddingBottom:'12.5%'}} preload="auto" autoPlay={true} loop={true} muted={true} >
+                                                        <source src='https://i.imgur.com/V3r7AFr.mp4' type="video/mp4"/>
+                                                    </video>
+                                                </picture>
+                                                
+                                                <div className="tags">
+                                                    <div>
+                                                        <ul>   
+                                                            <li>WEBAPP</li>
+                                                            <li>ANIMATIONS</li>
+                                                            <li>REACTJS</li>
+                                                            <li>NODEJS</li>
+                                                            <li>SNAPSVG</li>
+                                                            <li className="hidden">WEBSITE</li>
+                                                            <li className="hidden">FRONT-END</li>
+                                                            <li className="hidden">HTML5</li>
+                                                            <li className="hidden">CSS</li>
+                                                            <li className="hidden">JAVASCRIPT</li>
+                                                            <li className="hidden">UI/UX DESIGN</li>
+                                                            <li className="hidden">GAME DESIGN</li>
+                                                            <li className="hidden">AGILE</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <picture id="imgs4" className="imgs">
+                                                    <img src='https://i.imgur.com/51HHMip.png' type="image/png"/>
+                                                    {/*<img src={require('./images/portfolio-2-small.png')}/>*/}
+                                                </picture>
+                                            </div>
+                                            {/*<em className="fwa">Cool WebApp</em>*/}
+                                        </a>
+                                    </li>
                                     <li id="item1" className={`item  repo ${isHover ? '' : ''}`} onMouseOver={toggleHover} onMouseLeave={handleMouseLeave}>
                                         <a id="screen" href="/project1" className="screen">
                                             <div className="bar">
@@ -502,44 +713,7 @@ const Portfolio = (props, {children}) => {
                                             {/*<em className="fwa">FWA award</em>*/}
                                         </a>
                                     </li>
-                                    <li id="item4" className={`item  repo ${isHover ? '' : ''}`} onMouseOver={toggleHover4} onMouseLeave={handleMouseLeave4}>
-                                        <a href="/project4" className="screen">
-                                            <div className="bar">
-                                                <h2>Portfolio Web Application </h2>
-                                                <i></i>
-                                            </div>
-                                            <div className="main">
-                                                <picture className="back">
-                                                    <img src='https://i.imgur.com/S0XscRj.png' type="image/png"/>
-                                                   {/* <img src={require('./images/portfolio-1-small.png')}/>*/}
-                                                </picture>
-                                                <div className="tags">
-                                                    <div>
-                                                        <ul>   
-                                                            <li>WEBAPP</li>
-                                                            <li>ANIMATIONS</li>
-                                                            <li>REACTJS</li>
-                                                            <li>NODEJS</li>
-                                                            <li>SNAPSVG</li>
-                                                            <li className="hidden">WEBSITE</li>
-                                                            <li className="hidden">FRONT-END</li>
-                                                            <li className="hidden">HTML5</li>
-                                                            <li className="hidden">CSS</li>
-                                                            <li className="hidden">JAVASCRIPT</li>
-                                                            <li className="hidden">UI/UX DESIGN</li>
-                                                            <li className="hidden">GAME DESIGN</li>
-                                                            <li className="hidden">AGILE</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <picture id="imgs4" className="imgs">
-                                                    <img src='https://i.imgur.com/51HHMip.png' type="image/png"/>
-                                                    {/*<img src={require('./images/portfolio-2-small.png')}/>*/}
-                                                </picture>
-                                            </div>
-                                            {/*<em className="fwa">Cool WebApp</em>*/}
-                                        </a>
-                                    </li>
+                                    
                                     <li id="item5" className={`item  repo ${isHover ? '' : ''}`} onMouseOver={toggleHover5} onMouseLeave={handleMouseLeave5}>
                                         <a href="/project5" className="screen">
                                             <div className="bar">
@@ -725,6 +899,7 @@ const Portfolio = (props, {children}) => {
                                             </div>
                                         </a>
                                     </li>
+                                    {/* Removed this item for now so that the portfolio page is an even number
                                     <li id="item10" className={`item  repo ${isHover ? '' : ''}`} onMouseOver={toggleHover10} onMouseLeave={handleMouseLeave10} >
                                         <a href="/project10" className="screen">
                                             <div className="bar">
@@ -752,11 +927,11 @@ const Portfolio = (props, {children}) => {
                                                 </div>
                                                     <picture id="imgs10" className="imgs">
                                                         <img src='https://i.imgur.com/HnQSVO1.png' type="image/png"/>
-                                                        {/*<img src={require('./images/wack-a-mole2.png')}/>*/}
                                                     </picture>
                                             </div>
                                         </a>
                                     </li>
+                                    */ }
                             </ul>
                             <footer>
                                 <h4>Let's talk</h4>

@@ -31,8 +31,8 @@ const Project5 = () => {
                     <em></em>
                 </a>
                 
-                <a href="/project4" className="prev">
-                    <span>Portfolio Web Application</span>
+                <a href="/project3" className="prev">
+                    <span>Shoe Fly</span>
                     <em></em>
                 </a>
                 <div className="ribbon">
